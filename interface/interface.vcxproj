@@ -71,22 +71,22 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>$(IncludePath)</IncludePath>
-    <IntDir>intermediate\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir>intermediate\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)build\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>$(IncludePath)</IncludePath>
-    <IntDir>intermediate\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir>intermediate\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)build\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>$(IncludePath)</IncludePath>
-    <IntDir>intermediate\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir>intermediate\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)build\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>$(IncludePath)</IncludePath>
-    <IntDir>intermediate\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir>intermediate\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)build\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
