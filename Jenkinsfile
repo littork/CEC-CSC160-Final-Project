@@ -86,5 +86,23 @@ pipeline {
 				}
 			}
 		}
+		stage('Artifact') {
+			stage('Artifact Interface') {
+				parallel {
+					stage('Artifact Release x32') {
+						steps {
+							echo 'Beginning Release x32 Artifact'
+							archiveArtifacts 'build/interface/x32/Release/**/*.exe'
+						}
+					}
+					stage('Artifact Release x64') {
+						steps {
+							echo 'Beginning Release x64 Artifact'
+							archiveArtifacts 'build/interface/x64/Release/**/*.exe'
+						}
+					}
+				}
+			}
+		}
 	}
 }
