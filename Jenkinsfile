@@ -87,11 +87,4 @@ pipeline {
 			}
 		}
 	}
-	post {
-		always {
-			dir('Build') {
-				deleteDir()
-			}
-		}
-	}
 }
