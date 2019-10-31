@@ -8,9 +8,9 @@ pipeline {
 	stages {
 		stage('Build Nana') {
 			parallel {
-				stage('Build Debug x32') {
+				stage('Build Debug x86') {
 					steps {
-						echo 'Beginning Debug x32 Build'
+						echo 'Beginning Debug x86 Build'
 						bat multiline([
 							"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x86",
 							"Msbuild.exe ./nana/build/vc2019/nana.vcxproj /p:Configuration=Debug /p:SolutionDir=../../../"
@@ -26,9 +26,9 @@ pipeline {
 						])
 					}
 				}
-				stage('Build Release x32') {
+				stage('Build Release x86') {
 					steps {
-						echo 'Beginning Release x32 Build'
+						echo 'Beginning Release x86 Build'
 						bat multiline([
 							"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x86",
 							"Msbuild.exe ./nana/build/vc2019/nana.vcxproj /p:Configuration=Release /p:SolutionDir=../../../"
@@ -48,9 +48,9 @@ pipeline {
 		}
 		stage('Build UI') {
 			parallel {
-				stage('Build Debug x32') {
+				stage('Build Debug x86') {
 					steps {
-						echo 'Beginning Debug x32 Build'
+						echo 'Beginning Debug x86 Build'
 						bat multiline([
 							"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x86",
 							"Msbuild.exe ./interface/interface.vcxproj /p:Configuration=Debug /p:SolutionDir=../"
@@ -66,9 +66,9 @@ pipeline {
 						])
 					}
 				}
-				stage('Build Release x32') {
+				stage('Build Release x86') {
 					steps {
-						echo 'Beginning Release x32 Build'
+						echo 'Beginning Release x86 Build'
 						bat multiline([
 							"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x86",
 							"Msbuild.exe ./interface/interface.vcxproj /p:Configuration=Release /p:SolutionDir=../"
@@ -88,10 +88,10 @@ pipeline {
 		}
 		stage('Artifact Interface') {
 			parallel {
-				stage('Artifact Release x32') {
+				stage('Artifact Release x86') {
 					steps {
-						echo 'Beginning Release x32 Artifact'
-						archiveArtifacts 'build/interface/x32/Release/**/*.exe'
+						echo 'Beginning Release x86 Artifact'
+						archiveArtifacts 'build/interface/x86/Release/**/*.exe'
 					}
 				}
 				stage('Artifact Release x64') {
