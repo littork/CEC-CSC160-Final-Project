@@ -2,7 +2,7 @@
 
 #include "Macros.h"
 
-int WinMain() {
+int __stdcall WinMain() {
 	nana::form form;
 
 	form.caption("CEC Final Project");
