@@ -104,13 +104,7 @@ pipeline {
 		}
 		stage('GitHub Release') {
 			bat multiline([
-				"github-release release \
-				--user littork \
-				--repo \"CEC-CSC160-Final-Project\" \
-				--tag v0.0.1 \
-				--name "Test Release" \
-				--description "CEC Final Project Release" \
-				--pre-release"
+				"github-release release --user littork --repo \"CEC-CSC160-Final-Project\" --tag v0.0.1 --name "Test Release" --description "CEC Final Project Release" --pre-release"
 			])
 		}
 	}
