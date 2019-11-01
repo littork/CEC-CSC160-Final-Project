@@ -106,7 +106,9 @@ pipeline {
 			steps {
 				bat multiline([
 					"call C:\\Users\\Administrator\\Desktop\\github_token.bat",
-					"github-release\\github-release.exe release --user littork --repo \"CEC-CSC160-Final-Project\" --tag \"Build #${BUILD_NUMBER}\" --name \"Production Release\" --description \"CEC final project automated release for ${BRANCH_NAME} branch\" --pre-release"
+					"github-release\\github-release.exe release --user littork --repo \"CEC-CSC160-Final-Project\" --tag \"Build #${BUILD_NUMBER}\" --name \"Production Release\" --description \"CEC final project automated release for ${BRANCH_NAME} branch\" --pre-release",
+					"github-release\\github-release.exe upload --user littork --repo \"CEC-CSC160-Final-Project\" --tag \"Build #${BUILD_NUMBER}\" --name \"${PROJECT_NAME}-${VERSION_NAME}-x64.exe\" --file \"${JENKINS_HOME}/jobs/CEC-CSC160-Final-Project/branches/master/builds/${BUILD_NUMBER}/archive/build/interface/x64/Release/interface.exe\"",
+					"github-release\\github-release.exe upload --user littork --repo \"CEC-CSC160-Final-Project\" --tag \"Build #${BUILD_NUMBER}\" --name \"${PROJECT_NAME}-${VERSION_NAME}-x86.exe\" --file \"${JENKINS_HOME}/jobs/CEC-CSC160-Final-Project/branches/master/builds/${BUILD_NUMBER}/archive/build/interface/x86/Release/interface.exe\""
 				])
 			}
 		}
