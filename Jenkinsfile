@@ -104,19 +104,24 @@ pipeline {
 		}
 		stage('GitHub Release') {
 			steps {
-				bat multiline([
-					"call C:\\Users\\Administrator\\Desktop\\github_token.bat",
-					"echo Create Release",
-					"github-release\\github-release.exe release --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"Production Release\" --description \"CEC-Final-Project: Automated release for ${BRANCH_NAME} branch. (Build #${BUILD_NUMBER})\""
-				])
-				parallel {
-					stage('Upload Interface x64') {
+				stage('Create Release') {
+					steps {
+						bat multiline([
+							"call C:\\Users\\Administrator\\Desktop\\github_token.bat",
+							"github-release\\github-release.exe release --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"Production Release\" --description \"CEC-Final-Project: Automated release for ${BRANCH_NAME} branch. (Build #${BUILD_NUMBER})\""
+						])
+					}
+				}
+				stage('Upload Interface x64') {
+					steps {
 						bat multiline([
 							"call C:\\Users\\Administrator\\Desktop\\github_token.bat",
 							"github-release\\github-release.exe upload --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"interface_x64.exe\" --file \"${JENKINS_HOME}/jobs/CEC-CSC160-Final-Project/branches/master/builds/${BUILD_NUMBER}/archive/build/interface/x64/Release/interface.exe\""
 						])
 					}
-					stage('Upload Interface x86') {
+				}
+				stage('Upload Interface x86') {
+					steps {
 						bat multiline([
 							"call C:\\Users\\Administrator\\Desktop\\github_token.bat",
 							"github-release\\github-release.exe upload --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"interface_x86.exe\" --file \"${JENKINS_HOME}/jobs/CEC-CSC160-Final-Project/branches/master/builds/${BUILD_NUMBER}/archive/build/interface/x86/Release/interface.exe\""
