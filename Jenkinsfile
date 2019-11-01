@@ -106,7 +106,7 @@ pipeline {
 			steps {
 				bat multiline([
 					"call C:\\Users\\Administrator\\Desktop\\github_token.bat",
-					"github-release\\github-release.exe release --user littork --repo \"CEC-CSC160-Final-Project\" --tag \"Build #${BUILD_NUMBER}\" --name \"Production Release\" --description \"CEC Final Project Automated Release\nBranch: ${BRANCH_NAME}\" --pre-release"
+					"github-release\\github-release.exe release --user littork --repo \"CEC-CSC160-Final-Project\" --tag \"Build #${BUILD_NUMBER}\" --name \"Production Release\" --description \"CEC final project automated release for ${BRANCH_NAME} branch\" --pre-release"
 				])
 			}
 		}
