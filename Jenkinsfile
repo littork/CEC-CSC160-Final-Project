@@ -107,12 +107,22 @@ pipeline {
 				bat multiline([
 					"call C:\\Users\\Administrator\\Desktop\\github_token.bat",
 					"echo Create Release",
-					"github-release\\github-release.exe release --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"Production Release\" --description \"CEC final project automated release for ${BRANCH_NAME} branch\"",
-					"echo Upload Interface x64",
-					"github-release\\github-release.exe upload --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"interface_x64.exe\" --file \"${JENKINS_HOME}/jobs/CEC-CSC160-Final-Project/branches/master/builds/${BUILD_NUMBER}/archive/build/interface/x64/Release/interface.exe\"",
-					"echo Upload Interface x86",
-					"github-release\\github-release.exe upload --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"interface_x86.exe\" --file \"${JENKINS_HOME}/jobs/CEC-CSC160-Final-Project/branches/master/builds/${BUILD_NUMBER}/archive/build/interface/x86/Release/interface.exe\""
+					"github-release\\github-release.exe release --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"Production Release\" --description \"CEC-Final-Project: Automated release for ${BRANCH_NAME} branch. (Build #${BUILD_NUMBER})\""
 				])
+				parallel {
+					stage('Upload Interface x64') {
+						bat multiline([
+							"call C:\\Users\\Administrator\\Desktop\\github_token.bat",
+							"github-release\\github-release.exe upload --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"interface_x64.exe\" --file \"${JENKINS_HOME}/jobs/CEC-CSC160-Final-Project/branches/master/builds/${BUILD_NUMBER}/archive/build/interface/x64/Release/interface.exe\""
+						])
+					}
+					stage('Upload Interface x86') {
+						bat multiline([
+							"call C:\\Users\\Administrator\\Desktop\\github_token.bat",
+							"github-release\\github-release.exe upload --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"interface_x86.exe\" --file \"${JENKINS_HOME}/jobs/CEC-CSC160-Final-Project/branches/master/builds/${BUILD_NUMBER}/archive/build/interface/x86/Release/interface.exe\""
+						])
+					}
+				}
 			}
 		}
 	}
