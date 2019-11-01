@@ -107,11 +107,11 @@ pipeline {
 				bat multiline([
 					"call C:\\Users\\Administrator\\Desktop\\github_token.bat",
 					"echo Create Release",
-					"github-release\\github-release.exe release --user littork --repo \"CEC-CSC160-Final-Project\" --tag \"Build #${BUILD_NUMBER}\" --name \"Production Release - #${BUILD_NUMBER}\" --description \"CEC final project automated release for ${BRANCH_NAME} branch\"",
+					"github-release\\github-release.exe release --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"Production Release\" --description \"CEC final project automated release for ${BRANCH_NAME} branch\"",
 					"echo Upload Interface x64",
-					"github-release\\github-release.exe upload --user littork --repo \"CEC-CSC160-Final-Project\" --tag \"Build #${BUILD_NUMBER}\" --name \"interface_x64.exe\" --file \"${JENKINS_HOME}/jobs/CEC-CSC160-Final-Project/branches/master/builds/${BUILD_NUMBER}/archive/build/interface/x64/Release/interface.exe\"",
+					"github-release\\github-release.exe upload --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"interface_x64.exe\" --file \"${JENKINS_HOME}/jobs/CEC-CSC160-Final-Project/branches/master/builds/${BUILD_NUMBER}/archive/build/interface/x64/Release/interface.exe\"",
 					"echo Upload Interface x86",
-					"github-release\\github-release.exe upload --user littork --repo \"CEC-CSC160-Final-Project\" --tag \"Build #${BUILD_NUMBER}\" --name \"interface_x86.exe\" --file \"${JENKINS_HOME}/jobs/CEC-CSC160-Final-Project/branches/master/builds/${BUILD_NUMBER}/archive/build/interface/x86/Release/interface.exe\""
+					"github-release\\github-release.exe upload --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"interface_x86.exe\" --file \"${JENKINS_HOME}/jobs/CEC-CSC160-Final-Project/branches/master/builds/${BUILD_NUMBER}/archive/build/interface/x86/Release/interface.exe\""
 				])
 			}
 		}
