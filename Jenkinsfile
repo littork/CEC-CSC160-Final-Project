@@ -102,16 +102,16 @@ pipeline {
 				}
 			}
 		}
-		stage('GitHub Release') {
+		stage('Generate Github Release') {
 			steps {
-				stage('Create Release') {
-					steps {
-						bat multiline([
-							"call C:\\Users\\Administrator\\Desktop\\github_token.bat",
-							"github-release\\github-release.exe release --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"Production Release\" --description \"CEC-Final-Project: Automated release for ${BRANCH_NAME} branch. (Build #${BUILD_NUMBER})\""
-						])
-					}
-				}
+				bat multiline([
+					"call C:\\Users\\Administrator\\Desktop\\github_token.bat",
+					"github-release\\github-release.exe release --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"Production Release\" --description \"CEC-Final-Project: Automated release for ${BRANCH_NAME} branch. (Build #${BUILD_NUMBER})\""
+				])
+			}
+		}
+		stage('Upload to GitHub Release') {
+			parallel {
 				stage('Upload Interface x64') {
 					steps {
 						bat multiline([
