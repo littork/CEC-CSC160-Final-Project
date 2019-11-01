@@ -165,6 +165,11 @@
       <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(BuildNumber)' != ''">
+    <ClCompile>
+        <AdditionalOptions>/DBUILD_NUMBER=$(BuildNumber) %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>

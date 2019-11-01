@@ -3,10 +3,16 @@
 #include "Macros.h"
 #include <windows.h>
 
+#include <string>
+
 int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR pCmdLine, int nCmdShow) {
 	nana::form form;
 
-	form.caption("CEC Final Project");
+#ifdef BUILD_NUMBER
+	form.caption("CEC Final Project - Build " + std::to_string(BUILD_NUMBER));
+#else
+	form.caption("CEC Final Project - Dev Build");
+#endif
 
 	form.show();
 

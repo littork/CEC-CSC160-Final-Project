@@ -53,7 +53,7 @@ pipeline {
 						echo 'Beginning Debug x86 Build'
 						bat multiline([
 							"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x86",
-							"Msbuild.exe ./interface/interface.vcxproj /p:Configuration=Debug /p:SolutionDir=../"
+							"Msbuild.exe ./interface/interface.vcxproj /p:Configuration=Debug /p:SolutionDir=../ /p:BuildNumber=${BUILD_NUMBER}"
 						])
 					}
 				}
@@ -62,7 +62,7 @@ pipeline {
 						echo 'Beginning Debug x64 Build'
 						bat multiline([
 							"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x86_x64",
-							"Msbuild.exe ./interface/interface.vcxproj /p:Configuration=Debug /p:SolutionDir=../"
+							"Msbuild.exe ./interface/interface.vcxproj /p:Configuration=Debug /p:SolutionDir=../ /p:BuildNumber=${BUILD_NUMBER}"
 						])
 					}
 				}
@@ -71,7 +71,7 @@ pipeline {
 						echo 'Beginning Release x86 Build'
 						bat multiline([
 							"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x86",
-							"Msbuild.exe ./interface/interface.vcxproj /p:Configuration=Release /p:SolutionDir=../"
+							"Msbuild.exe ./interface/interface.vcxproj /p:Configuration=Release /p:SolutionDir=../ /p:BuildNumber=${BUILD_NUMBER}"
 						])
 					}
 				}
@@ -80,7 +80,7 @@ pipeline {
 						echo 'Beginning Release x64 Build'
 						bat multiline([
 							"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x86_x64",
-							"Msbuild.exe ./interface/interface.vcxproj /p:Configuration=Release /p:SolutionDir=../"
+							"Msbuild.exe ./interface/interface.vcxproj /p:Configuration=Release /p:SolutionDir=../ /p:BuildNumber=${BUILD_NUMBER}"
 						])
 					}
 				}
@@ -106,7 +106,7 @@ pipeline {
 			steps {
 				bat multiline([
 					"call C:\\Users\\Administrator\\Desktop\\github_token.bat",
-					"github-release\\github-release.exe release --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"Production Release\" --description \"CEC-Final-Project: Automated release for ${BRANCH_NAME} branch. (Build #${BUILD_NUMBER})\""
+					"github-release\\github-release.exe release --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"Production Release\" --description \"CEC-Final-Project: Automated release for ${BRANCH_NAME} branch (Build #${BUILD_NUMBER})\""
 				])
 			}
 		}
