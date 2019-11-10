@@ -1,21 +1,21 @@
-#include <nana/gui.hpp>
-
 #include "Macros.h"
 #include <windows.h>
 
 #include <string>
 
+#include "UICore.h"
+
 int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR pCmdLine, int nCmdShow) {
-	nana::form form;
+	Form form = Form(500, 300);
 
 #ifdef BUILD_NUMBER
-	form.caption("CEC Final Project - Build " + std::to_string(BUILD_NUMBER));
+	form.setTitle("CEC Final Project - Release Build " + std::to_string(BUILD_NUMBER));
 #else
-	form.caption("CEC Final Project - Dev Build");
+	form.setTitle("CEC Final Project - Dev Build");
 #endif
 
-	form.show();
+	form.display();
 
-	nana::exec();
+	UI::start();
 	return 0;
 }
