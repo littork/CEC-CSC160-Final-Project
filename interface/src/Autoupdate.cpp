@@ -5,6 +5,8 @@
 
 #include <nana/gui.hpp>
 
+std::string Autoupdate::buildNumber = "";
+
 void Autoupdate::begin() {
 #ifdef BUILD_NUMBER
 	if (!buildNumber.size()) {
