@@ -17,8 +17,8 @@ void Autoupdate::begin() {
 	currentBuild = currentBuild.substr(68);
 
 	if (buildNumber != currentBuild) {
-		nana::msgbox m("Update Available");
-		m << "An update is available. You are currently on build #" << buildNumber << ", but build " << currentBuild << " has been released.";
+		nana::msgbox m("Update Available", nana::msgbox::yes_no);
+		m << "An update is available. You are currently on build #" << buildNumber << ", but build " << currentBuild << " has been released. Do you wish to update now?";
 		m();
 	}
 #endif
