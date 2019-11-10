@@ -10,7 +10,7 @@
 #include <nana/gui/widgets/label.hpp>
 #include <nana/gui/widgets/button.hpp>
 
-#include "Shell.h"
+#include "Autoupdate.h"
 
 int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR pCmdLine, int nCmdShow) {
 	Form form = Form(500, 300);
@@ -57,11 +57,7 @@ int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR pCmdLi
 
 	// Shell
 
-	std::string runResult = Shell::run("curl -fsSLI -o /dev/null -w %{url_effective} https://github.com/littork/CEC-CSC160-Final-Project/releases/latest");
-	runResult = runResult.substr(68);
-#ifdef BUILD_NUMBER
-	buttons[0]->caption("Result " + runResult + " " + std::to_string(BUILD_NUMBER));
-#endif
+	Autoupdate::begin();
 
 	// Show form
 
