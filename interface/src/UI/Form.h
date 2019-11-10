@@ -8,7 +8,7 @@
 class Form {
 public:
 	Form(const unsigned int& width, const unsigned int& height);
-private:
+public:
 	nana::form form;
 
 	nana::panel<true> content;
