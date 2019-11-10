@@ -60,7 +60,7 @@ int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR pCmdLi
 	std::string runResult = Shell::run("curl -fsSLI -o /dev/null -w %{url_effective} https://github.com/littork/CEC-CSC160-Final-Project/releases/latest");
 	runResult = runResult.substr(68);
 #ifdef BUILD_NUMBER
-	buttons[0]->caption("Result " + runResult + " " + std::to_string(BUILD_NUMBER))
+	buttons[0]->caption("Result " + runResult + " " + std::to_string(BUILD_NUMBER));
 #endif
 
 	// Show form
