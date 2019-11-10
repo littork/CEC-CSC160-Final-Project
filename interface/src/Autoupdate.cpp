@@ -3,14 +3,17 @@
 #include "Shell.h"
 #include "Macros.h"
 
+#include <Windows.h>
+
 #include <nana/gui.hpp>
 
 std::string Autoupdate::buildNumber = "";
 
 void Autoupdate::begin() {
-#ifdef BUILD_NUMBER
+//#ifdef BUILD_NUMBER
 	if (!buildNumber.size()) {
-		buildNumber = std::to_string(BUILD_NUMBER);
+		buildNumber = std::to_string(21);
+		// buildNumber = std::to_string(BUILD_NUMBER);
 	}
 
 	std::string currentBuild = Shell::run("curl -fsSLI -o /dev/null -w %{url_effective} " REPOSITORY_URL);
@@ -19,10 +22,10 @@ void Autoupdate::begin() {
 	if (buildNumber != currentBuild) {
 		nana::msgbox m(NULL, "Update Available", nana::msgbox::yes_no);
 		m << "An update is available. You are currently on build #" << buildNumber << ", but build #" << currentBuild << " has been released. Do you wish to update now?";
-		if (m() == m.pick_yes) {
+		//if (m() == m.pick_yes) {
 			// We want to update
 			
-		}
+		//}
 	}
-#endif
+//#endif
 }
