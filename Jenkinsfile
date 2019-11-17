@@ -35,7 +35,7 @@ pipeline {
 							"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x86_x64",
 							"Msbuild.exe ./curl/built/lib/libcurl.vcxproj /p:Configuration=Release /p:SolutionDir=../../../"
 						])
-						bat "echo f | xcopy /f /y \"./curl/built/lib/Debug/libcurl.lib\" \"./build/libcurl/x64/Release/libcurl.lib\""
+						bat "echo f | xcopy /f /y \"./curl/built/lib/Release/libcurl.lib\" \"./build/libcurl/x64/Release/libcurl.lib\""
 					}
 				}
 			}
