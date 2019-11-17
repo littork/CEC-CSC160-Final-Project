@@ -23,7 +23,7 @@ pipeline {
 						echo 'Beginning Debug x64 Build'
 						bat multiline([
 							"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x86_x64",
-							"Msbuild.exe ./curl/built/lib/libcurl.vcxproj /p:Configuration=Debug /p:SolutionDir=../../../ /p:OutputDir=\$(SolutionDir)build\\\$(ProjectName)\\\$(PlatformShortName)\\\$(Configuration)\\"
+							"Msbuild.exe ./curl/built/lib/libcurl.vcxproj /p:Configuration=Debug /p:SolutionDir=../../../ /p:OutputPath=\$(SolutionDir)build\\\$(ProjectName)\\\$(PlatformShortName)\\\$(Configuration)\\"
 						])
 					}
 				}
@@ -32,7 +32,7 @@ pipeline {
 						echo 'Beginning Release x64 Build'
 						bat multiline([
 							"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x86_x64",
-							"Msbuild.exe ./curl/built/lib/libcurl.vcxproj /p:Configuration=Release /p:SolutionDir=../../../ /p:OutputDir=\$(SolutionDir)build\\\$(ProjectName)\\\$(PlatformShortName)\\\$(Configuration)\\"
+							"Msbuild.exe ./curl/built/lib/libcurl.vcxproj /p:Configuration=Release /p:SolutionDir=../../../ /p:OutputPath=\$(SolutionDir)build\\\$(ProjectName)\\\$(PlatformShortName)\\\$(Configuration)\\"
 						])
 					}
 				}
