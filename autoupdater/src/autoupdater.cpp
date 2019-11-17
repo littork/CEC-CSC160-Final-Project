@@ -40,6 +40,9 @@ int main(int argc, char* argv[]) {
 
 	std::cout << "Autoupdater: Beginning auto update\n";
 
+	// Wait for interface to close and unlock
+	Sleep(2500);
+
 	const std::string targetPath = argv[1];
 	const std::string targetURL = argv[2];
 
