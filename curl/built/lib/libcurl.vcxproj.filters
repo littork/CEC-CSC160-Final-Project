@@ -1,821 +1,821 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\file.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\file.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\timeval.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\timeval.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\base64.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\base64.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hostip.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\hostip.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\progress.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\progress.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\formdata.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\formdata.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\cookie.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\cookie.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\http.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\sendf.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\sendf.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\ftp.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\ftp.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\url.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\url.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\dict.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\dict.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\if2ip.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\if2ip.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\speedcheck.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\speedcheck.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\ldap.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\ldap.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\version.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\version.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\getenv.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\getenv.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\escape.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\escape.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\mprintf.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\mprintf.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\telnet.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\telnet.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\netrc.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\netrc.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\getinfo.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\getinfo.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\transfer.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\transfer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strcase.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\strcase.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\easy.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\easy.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\security.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\security.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_fnmatch.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\curl_fnmatch.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\fileinfo.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\fileinfo.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\ftplistparser.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\ftplistparser.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\wildcard.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\wildcard.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\krb5.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\krb5.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\memdebug.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\memdebug.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http_chunks.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\http_chunks.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strtok.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\strtok.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\connect.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\connect.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\llist.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\llist.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hash.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\hash.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\multi.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\multi.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\content_encoding.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\content_encoding.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\share.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\share.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http_digest.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\http_digest.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\md4.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\md4.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\md5.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\md5.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http_negotiate.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\http_negotiate.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\inet_pton.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\inet_pton.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strtoofft.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\strtoofft.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strerror.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\strerror.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\amigaos.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\amigaos.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hostasyn.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\hostasyn.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hostip4.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\hostip4.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hostip6.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\hostip6.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hostsyn.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\hostsyn.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\inet_ntop.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\inet_ntop.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\parsedate.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\parsedate.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\select.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\select.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\tftp.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\tftp.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\splay.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\splay.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strdup.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\strdup.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\socks.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\socks.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_addrinfo.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\curl_addrinfo.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\socks_gssapi.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\socks_gssapi.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\socks_sspi.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\socks_sspi.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_sspi.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\curl_sspi.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\slist.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\slist.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\nonblock.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\nonblock.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_memrchr.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\curl_memrchr.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\imap.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\imap.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\pop3.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\pop3.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\smtp.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\smtp.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\pingpong.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\pingpong.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\rtsp.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\rtsp.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_threads.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\curl_threads.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\warnless.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\warnless.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hmac.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\hmac.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_rtmp.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\curl_rtmp.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\openldap.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\openldap.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_gethostname.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\curl_gethostname.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\gopher.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\gopher.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\idn_win32.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\idn_win32.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http_proxy.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\http_proxy.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\non-ascii.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\non-ascii.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\asyn-ares.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\asyn-ares.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\asyn-thread.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\asyn-thread.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_gssapi.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\curl_gssapi.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http_ntlm.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\http_ntlm.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_ntlm_wb.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\curl_ntlm_wb.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_ntlm_core.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\curl_ntlm_core.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_sasl.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\curl_sasl.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\rand.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\rand.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_multibyte.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\curl_multibyte.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hostcheck.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\hostcheck.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\conncache.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\conncache.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\dotdot.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\dotdot.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\x509asn1.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\x509asn1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http2.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\http2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\smb.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\smb.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_endian.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\curl_endian.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_des.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\curl_des.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\system_win32.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\system_win32.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\mime.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\mime.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\sha256.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\sha256.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\setopt.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\setopt.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_path.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\curl_path.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_ctype.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\curl_ctype.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_range.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\curl_range.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\psl.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\psl.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\doh.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\doh.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\urlapi.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\urlapi.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_get_line.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\curl_get_line.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\altsvc.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\altsvc.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\socketpair.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\socketpair.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\vauth.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vauth\vauth.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\cleartext.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vauth\cleartext.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\cram.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vauth\cram.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\digest.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vauth\digest.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\digest_sspi.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vauth\digest_sspi.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\krb5_gssapi.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vauth\krb5_gssapi.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\krb5_sspi.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vauth\krb5_sspi.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\ntlm.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vauth\ntlm.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\ntlm_sspi.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vauth\ntlm_sspi.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\oauth2.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vauth\oauth2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\spnego_gssapi.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vauth\spnego_gssapi.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\spnego_sspi.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vauth\spnego_sspi.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\openssl.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vtls\openssl.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\gtls.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vtls\gtls.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\vtls.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vtls\vtls.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\nss.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vtls\nss.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\polarssl.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vtls\polarssl.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\polarssl_threadlock.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vtls\polarssl_threadlock.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\wolfssl.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vtls\wolfssl.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\schannel.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vtls\schannel.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\schannel_verify.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vtls\schannel_verify.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\sectransp.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vtls\sectransp.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\gskit.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vtls\gskit.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\mbedtls.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vtls\mbedtls.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\mesalink.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vtls\mesalink.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vquic\ngtcp2.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vquic\ngtcp2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vquic\quiche.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vquic\quiche.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vssh\libssh2.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vssh\libssh2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vssh\libssh.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\vssh\libssh.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\arpa_telnet.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\arpa_telnet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\netrc.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\netrc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\file.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\file.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\timeval.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\timeval.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hostip.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\hostip.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\progress.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\progress.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\formdata.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\formdata.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\cookie.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\cookie.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\http.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\sendf.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\sendf.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\ftp.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\ftp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\url.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\url.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\dict.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\dict.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\if2ip.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\if2ip.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\speedcheck.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\speedcheck.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\urldata.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\urldata.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_ldap.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_ldap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\escape.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\escape.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\telnet.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\telnet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\getinfo.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\getinfo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strcase.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\strcase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_sec.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_sec.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\memdebug.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\memdebug.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http_chunks.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\http_chunks.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_fnmatch.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_fnmatch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\wildcard.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\wildcard.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\fileinfo.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\fileinfo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\ftplistparser.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\ftplistparser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strtok.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\strtok.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\connect.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\connect.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\llist.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\llist.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hash.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\hash.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\content_encoding.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\content_encoding.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\share.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\share.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_md4.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_md4.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_md5.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_md5.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http_digest.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\http_digest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http_negotiate.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\http_negotiate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\inet_pton.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\inet_pton.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\amigaos.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\amigaos.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strtoofft.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\strtoofft.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strerror.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\strerror.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\inet_ntop.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\inet_ntop.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curlx.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curlx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_memory.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_memory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_setup.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_setup.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\transfer.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\transfer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\select.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\select.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\easyif.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\easyif.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\multiif.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\multiif.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\parsedate.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\parsedate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\tftp.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\tftp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\sockaddr.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\sockaddr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\splay.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\splay.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strdup.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\strdup.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\socks.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\socks.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\ssh.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\ssh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_base64.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_base64.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_addrinfo.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_addrinfo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_sspi.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_sspi.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\slist.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\slist.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\nonblock.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\nonblock.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_memrchr.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_memrchr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\imap.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\imap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\pop3.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\pop3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\smtp.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\smtp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\pingpong.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\pingpong.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\rtsp.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\rtsp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_threads.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_threads.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\warnless.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\warnless.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_hmac.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_hmac.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_rtmp.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_rtmp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_gethostname.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_gethostname.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\gopher.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\gopher.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http_proxy.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\http_proxy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\non-ascii.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\non-ascii.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\asyn.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\asyn.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http_ntlm.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\http_ntlm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_gssapi.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_gssapi.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_ntlm_wb.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_ntlm_wb.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_ntlm_core.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_ntlm_core.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_sasl.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_sasl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_multibyte.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_multibyte.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hostcheck.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\hostcheck.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\conncache.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\conncache.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_setup_once.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_setup_once.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\multihandle.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\multihandle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\setup-vms.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\setup-vms.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\dotdot.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\dotdot.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\x509asn1.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\x509asn1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http2.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\http2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\sigpipe.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\sigpipe.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\smb.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\smb.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_endian.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_endian.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_des.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_des.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_printf.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_printf.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\system_win32.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\system_win32.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\rand.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\rand.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\mime.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\mime.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_sha256.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_sha256.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\setopt.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\setopt.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_path.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_path.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_ctype.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_ctype.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_range.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_range.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\psl.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\psl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\doh.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\doh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\urlapi-int.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\urlapi-int.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_get_line.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_get_line.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\altsvc.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\altsvc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\quic.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\quic.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\socketpair.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\socketpair.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\vauth.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\vauth\vauth.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\digest.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\vauth\digest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\ntlm.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\vauth\ntlm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\openssl.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\vtls\openssl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\vtls.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\vtls\vtls.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\gtls.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\vtls\gtls.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\nssg.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\vtls\nssg.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\polarssl.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\vtls\polarssl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\polarssl_threadlock.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\vtls\polarssl_threadlock.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\wolfssl.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\vtls\wolfssl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\schannel.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\vtls\schannel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\sectransp.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\vtls\sectransp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\gskit.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\vtls\gskit.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\mbedtls.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\vtls\mbedtls.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\mesalink.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\vtls\mesalink.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vquic\ngtcp2.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\vquic\ngtcp2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vquic\quiche.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\vquic\quiche.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\curl_config.h">
+    <ClInclude Include="$(SolutionDir)curl\built\lib\curl_config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\CMakeLists.txt" />
+    <CustomBuild Include="$(SolutionDir)curl\lib\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\libcurl.rc">
+    <ResourceCompile Include="$(SolutionDir)curl\lib\libcurl.rc">
       <Filter>Source Files</Filter>
     </ResourceCompile>
   </ItemGroup>

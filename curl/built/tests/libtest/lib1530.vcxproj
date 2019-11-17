@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)curl\built\tests\libtest\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">lib1530.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">lib1530</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)curl\built\tests\libtest\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">lib1530.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">lib1530</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(SolutionDir)curl\built\tests\libtest\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">lib1530.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">lib1530</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(SolutionDir)curl\built\tests\libtest\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">lib1530.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">lib1530</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;$(SolutionDir)curl\built\include;$(SolutionDir)curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>
@@ -105,10 +105,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;CURL_EMBED_MANIFEST;_DEBUG;_WINDOWS;LIB1530;_WIN32_WINNT=0x0600;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CURL_STATICLIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;$(SolutionDir)curl\built\include;$(SolutionDir)curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;$(SolutionDir)curl\built\include;$(SolutionDir)curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -131,7 +131,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;$(SolutionDir)curl\built\include;$(SolutionDir)curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <DisableSpecificWarnings>4127</DisableSpecificWarnings>
@@ -150,10 +150,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;CURL_EMBED_MANIFEST;_WINDOWS;NDEBUG;LIB1530;_WIN32_WINNT=0x0600;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CURL_STATICLIB;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;$(SolutionDir)curl\built\include;$(SolutionDir)curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;$(SolutionDir)curl\built\include;$(SolutionDir)curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -176,7 +176,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;$(SolutionDir)curl\built\include;$(SolutionDir)curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <DisableSpecificWarnings>4127</DisableSpecificWarnings>
@@ -195,10 +195,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;CURL_EMBED_MANIFEST;_WINDOWS;NDEBUG;LIB1530;_WIN32_WINNT=0x0600;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CURL_STATICLIB;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;$(SolutionDir)curl\built\include;$(SolutionDir)curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;$(SolutionDir)curl\built\include;$(SolutionDir)curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -221,7 +221,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;$(SolutionDir)curl\built\include;$(SolutionDir)curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -239,10 +239,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;CURL_EMBED_MANIFEST;_WINDOWS;NDEBUG;LIB1530;_WIN32_WINNT=0x0600;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CURL_STATICLIB;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;$(SolutionDir)curl\built\include;$(SolutionDir)curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;$(SolutionDir)curl\built\include;$(SolutionDir)curl\tests\libtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -264,7 +264,7 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest\CMakeLists.txt">
+    <CustomBuild Include="$(SolutionDir)curl\tests\libtest\CMakeLists.txt">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/tests/libtest/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl -BC:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/built --check-stamp-file C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/built/tests/libtest/CMakeFiles/generate.stamp
@@ -275,8 +275,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/tests/libtest/CMakeLists.txt;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\Makefile.inc.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest\CMakeLists.txt;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/tests/libtest/CMakeLists.txt;$(SolutionDir)curl\built\tests\libtest\Makefile.inc.cmake;$(SolutionDir)curl\tests\libtest\CMakeLists.txt;$(SolutionDir)curl\tests\libtest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)curl\built\tests\libtest\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/tests/libtest/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
@@ -288,8 +288,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/tests/libtest/CMakeLists.txt;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\Makefile.inc.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest\CMakeLists.txt;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/tests/libtest/CMakeLists.txt;$(SolutionDir)curl\built\tests\libtest\Makefile.inc.cmake;$(SolutionDir)curl\tests\libtest\CMakeLists.txt;$(SolutionDir)curl\tests\libtest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)curl\built\tests\libtest\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/tests/libtest/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
@@ -301,8 +301,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/tests/libtest/CMakeLists.txt;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\Makefile.inc.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest\CMakeLists.txt;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/tests/libtest/CMakeLists.txt;$(SolutionDir)curl\built\tests\libtest\Makefile.inc.cmake;$(SolutionDir)curl\tests\libtest\CMakeLists.txt;$(SolutionDir)curl\tests\libtest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(SolutionDir)curl\built\tests\libtest\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/tests/libtest/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
@@ -314,28 +314,28 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/tests/libtest/CMakeLists.txt;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\Makefile.inc.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest\CMakeLists.txt;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/tests/libtest/CMakeLists.txt;$(SolutionDir)curl\built\tests\libtest\Makefile.inc.cmake;$(SolutionDir)curl\tests\libtest\CMakeLists.txt;$(SolutionDir)curl\tests\libtest\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(SolutionDir)curl\built\tests\libtest\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest\lib1530.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest\first.c" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest\test.h" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest\testutil.c" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest\testutil.h" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\warnless.c" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\warnless.h" />
+    <ClCompile Include="$(SolutionDir)curl\tests\libtest\lib1530.c" />
+    <ClCompile Include="$(SolutionDir)curl\tests\libtest\first.c" />
+    <ClInclude Include="$(SolutionDir)curl\tests\libtest\test.h" />
+    <ClCompile Include="$(SolutionDir)curl\tests\libtest\testutil.c" />
+    <ClInclude Include="$(SolutionDir)curl\tests\libtest\testutil.h" />
+    <ClCompile Include="$(SolutionDir)curl\lib\warnless.c" />
+    <ClInclude Include="$(SolutionDir)curl\lib\warnless.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\ZERO_CHECK.vcxproj">
+    <ProjectReference Include="$(SolutionDir)curl\built\ZERO_CHECK.vcxproj">
       <Project>{AC156E9D-3660-384D-A740-76A18F85C970}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\libcurl.vcxproj">
+    <ProjectReference Include="$(SolutionDir)curl\built\lib\libcurl.vcxproj">
       <Project>{33F6DD82-D3CC-3238-962B-E2D1CF7067A6}</Project>
       <Name>libcurl</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>

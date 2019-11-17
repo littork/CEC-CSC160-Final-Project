@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1521.c">
+    <ClCompile Include="$(SolutionDir)curl\built\tests\libtest\lib1521.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest\first.c">
+    <ClCompile Include="$(SolutionDir)curl\tests\libtest\first.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest\test.h">
+    <ClInclude Include="$(SolutionDir)curl\tests\libtest\test.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\735f0ca68029234631649ba45d9000b5\lib1521.c.rule">
+    <CustomBuild Include="$(SolutionDir)curl\built\CMakeFiles\735f0ca68029234631649ba45d9000b5\lib1521.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest\CMakeLists.txt" />
+    <CustomBuild Include="$(SolutionDir)curl\tests\libtest\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">

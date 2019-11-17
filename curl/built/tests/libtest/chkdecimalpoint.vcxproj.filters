@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest\chkdecimalpoint.c">
+    <ClCompile Include="$(SolutionDir)curl\tests\libtest\chkdecimalpoint.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\mprintf.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\mprintf.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_ctype.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\curl_ctype.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\libtest\CMakeLists.txt" />
+    <CustomBuild Include="$(SolutionDir)curl\tests\libtest\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">

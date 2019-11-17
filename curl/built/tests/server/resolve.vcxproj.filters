@@ -1,71 +1,71 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\mprintf.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\mprintf.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\nonblock.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\nonblock.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strtoofft.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\strtoofft.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\warnless.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\warnless.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_ctype.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\curl_ctype.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\server\getpart.c">
+    <ClCompile Include="$(SolutionDir)curl\tests\server\getpart.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\base64.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\base64.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\memdebug.c">
+    <ClCompile Include="$(SolutionDir)curl\lib\memdebug.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\server\util.c">
+    <ClCompile Include="$(SolutionDir)curl\tests\server\util.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\server\resolve.c">
+    <ClCompile Include="$(SolutionDir)curl\tests\server\resolve.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curlx.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curlx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\nonblock.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\nonblock.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strtoofft.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\strtoofft.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\warnless.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\warnless.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_ctype.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_ctype.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\server\getpart.h">
+    <ClInclude Include="$(SolutionDir)curl\tests\server\getpart.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\server\server_setup.h">
+    <ClInclude Include="$(SolutionDir)curl\tests\server\server_setup.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_base64.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\curl_base64.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\memdebug.h">
+    <ClInclude Include="$(SolutionDir)curl\lib\memdebug.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\server\util.h">
+    <ClInclude Include="$(SolutionDir)curl\tests\server\util.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\tests\server\CMakeLists.txt" />
+    <CustomBuild Include="$(SolutionDir)curl\tests\server\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">

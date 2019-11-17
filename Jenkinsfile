@@ -6,6 +6,16 @@ void multiline(List<String> commands) {
 pipeline {
 	agent any
 	stages {
+		stage('Configure CURL') {
+			parallel {
+				stage('Run CMake') {
+					steps {
+						echo 'Beginning Static Library CMake'
+						bat "CMake.exe -B./curl -H./built -DBUILD_SHARED_LIBS=OFF"
+					}
+				}
+			}
+		}
 		stage('Build CURL') {
 			parallel {
 				stage('Build Debug x64') {
