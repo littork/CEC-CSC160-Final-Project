@@ -6,7 +6,7 @@ class Autoupdate {
 private:
 	Autoupdate() {};
 public:
-	static void begin();
+	static bool check();
 private:
 	static std::string buildNumber;
 };

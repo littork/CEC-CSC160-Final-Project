@@ -13,6 +13,13 @@
 #include "Autoupdate.h"
 
 int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR pCmdLine, int nCmdShow) {
+	// Autoupdater
+
+	if (!Autoupdate::check()) {
+		// Catch auto update
+		return 0;
+	}
+
 	// Form
 
 	Form form = Form(500, 300);
@@ -56,10 +63,6 @@ int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR pCmdLi
 
 		buttons.push_back(button);
 	}
-
-	// Autoupdater
-
-	Autoupdate::begin();
 
 	// Show form
 

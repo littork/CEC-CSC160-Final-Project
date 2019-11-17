@@ -78,6 +78,28 @@ pipeline {
 				}
 			}
 		}
+		stage('Build Autoupdater') {
+			parallel {
+				stage('Build Debug x64') {
+					steps {
+						echo 'Beginning Debug x64 Build'
+						bat multiline([
+							"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x86_x64",
+							"Msbuild.exe ./autoupdater/Autoupdater.vcxproj /p:Configuration=Debug /p:SolutionDir=../"
+						])
+					}
+				}
+				stage('Build Release x64') {
+					steps {
+						echo 'Beginning Release x64 Build'
+						bat multiline([
+							"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x86_x64",
+							"Msbuild.exe ./autoupdater/Autoupdater.vcxproj /p:Configuration=Release /p:SolutionDir=../"
+						])
+					}
+				}
+			}
+		}
 		stage('Build UI') {
 			parallel {
 				stage('Build Debug x64') {
@@ -100,12 +122,18 @@ pipeline {
 				}
 			}
 		}
-		stage('Artifact Interface') {
+		stage('Artifacts') {
 			parallel {
-				stage('Artifact Release x64') {
+				stage('Artifact Interface Release x64') {
 					steps {
-						echo 'Beginning Release x64 Artifact'
+						echo 'Beginning Interface Release x64 Artifact'
 						archiveArtifacts 'build/interface/x64/Release/**/*.exe'
+					}
+				}
+				stage('Artifact Autoupdater Release x64') {
+					steps {
+						echo 'Beginning Autoupdate Release x64 Artifact'
+						archiveArtifacts 'build/autoupdater/x64/Release/**/*.exe'
 					}
 				}
 			}
@@ -124,7 +152,15 @@ pipeline {
 					steps {
 						bat multiline([
 							"call C:\\Users\\Administrator\\Desktop\\github_token.bat",
-							"github-release\\github-release.exe upload --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"interface_x64.exe\" --file \"${JENKINS_HOME}/jobs/CEC-CSC160-Final-Project/branches/master/builds/${BUILD_NUMBER}/archive/build/interface/x64/Release/interface.exe\""
+							"github-release\\github-release.exe upload --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"interface.exe\" --file \"${JENKINS_HOME}/jobs/CEC-CSC160-Final-Project/branches/master/builds/${BUILD_NUMBER}/archive/build/interface/x64/Release/interface.exe\""
+						])
+					}
+				}
+				stage('Upload Autoupdater x64') {
+					steps {
+						bat multiline([
+							"call C:\\Users\\Administrator\\Desktop\\github_token.bat",
+							"github-release\\github-release.exe upload --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"autoupdater.exe\" --file \"${JENKINS_HOME}/jobs/CEC-CSC160-Final-Project/branches/master/builds/${BUILD_NUMBER}/archive/build/autoupdater/x64/Release/autoupdater.exe\""
 						])
 					}
 				}
