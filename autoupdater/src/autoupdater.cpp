@@ -3,7 +3,11 @@
 
 #include <Windows.h>
 
+#include <curl/curl.h>
+
 int main(int argc, char* argv[]) {
+	curl_global_init(CURL_GLOBAL_ALL);
+
 	const std::string deletePath = argv[1];
 	const std::string updateURL = argv[2];
 

@@ -13,6 +13,8 @@
 #include "Autoupdate.h"
 
 int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR pCmdLine, int nCmdShow) {
+	// Form
+
 	Form form = Form(500, 300);
 
 	// Form title
@@ -55,7 +57,7 @@ int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR pCmdLi
 		buttons.push_back(button);
 	}
 
-	// Shell
+	// Autoupdater
 
 	Autoupdate::begin();
 

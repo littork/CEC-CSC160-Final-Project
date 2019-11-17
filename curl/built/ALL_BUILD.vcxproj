@@ -1,0 +1,1160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AE16D59F-024D-3AFF-911A-CD13A03D2BE9}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl -BC:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/built --check-stamp-file C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/built/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.14\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCygwin.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPerl.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\CurlSymbolHiding.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\CurlTests.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\Macros.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\OtherTests.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\Platforms\WindowsCache.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\Utilities.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\cmake_uninstall.cmake.in;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\curl-config.cmake.in;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMakeLists.txt;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\3.14.0-rc1\CMakeCCompiler.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\3.14.0-rc1\CMakeRCCompiler.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\3.14.0-rc1\CMakeSystem.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_TFTP_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_ASSERT_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_CRYPTO_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_DES_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_ERRNO_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_ERR_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_IDN2_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_IFADDRS_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_KRB_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_LIBGEN_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_LOCALE_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_TCP_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_PEM_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_POLL_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_RSA_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SSL_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_STDBOOL_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_STDDEF_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_STDIO_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_STROPTS_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_FILIO_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_RESOURCE_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UIO_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UN_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UTSNAME_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_XATTR_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_WINDOWS_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK2_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_WS2TCPIP_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_CURL_OFF_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_INT.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_LONG.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_LONG_LONG.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_OFF_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_SHORT.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_SIG_ATOMIC_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_SIZE_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_SSIZE_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_STRUCT_SOCKADDR_STORAGE.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_TIME_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF___INT64.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\feature_tests.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\curl-config.in;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\libcurl.pc.in;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl -BC:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/built --check-stamp-file C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/built/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.14\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCygwin.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPerl.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\CurlSymbolHiding.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\CurlTests.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\Macros.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\OtherTests.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\Platforms\WindowsCache.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\Utilities.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\cmake_uninstall.cmake.in;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\curl-config.cmake.in;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMakeLists.txt;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\3.14.0-rc1\CMakeCCompiler.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\3.14.0-rc1\CMakeRCCompiler.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\3.14.0-rc1\CMakeSystem.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_TFTP_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_ASSERT_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_CRYPTO_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_DES_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_ERRNO_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_ERR_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_IDN2_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_IFADDRS_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_KRB_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_LIBGEN_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_LOCALE_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_TCP_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_PEM_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_POLL_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_RSA_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SSL_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_STDBOOL_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_STDDEF_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_STDIO_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_STROPTS_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_FILIO_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_RESOURCE_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UIO_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UN_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UTSNAME_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_XATTR_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_WINDOWS_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK2_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_WS2TCPIP_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_CURL_OFF_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_INT.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_LONG.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_LONG_LONG.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_OFF_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_SHORT.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_SIG_ATOMIC_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_SIZE_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_SSIZE_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_STRUCT_SOCKADDR_STORAGE.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_TIME_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF___INT64.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\feature_tests.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\curl-config.in;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\libcurl.pc.in;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl -BC:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/built --check-stamp-file C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/built/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.14\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCygwin.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPerl.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\CurlSymbolHiding.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\CurlTests.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\Macros.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\OtherTests.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\Platforms\WindowsCache.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\Utilities.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\cmake_uninstall.cmake.in;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\curl-config.cmake.in;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMakeLists.txt;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\3.14.0-rc1\CMakeCCompiler.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\3.14.0-rc1\CMakeRCCompiler.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\3.14.0-rc1\CMakeSystem.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_TFTP_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_ASSERT_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_CRYPTO_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_DES_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_ERRNO_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_ERR_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_IDN2_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_IFADDRS_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_KRB_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_LIBGEN_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_LOCALE_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_TCP_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_PEM_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_POLL_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_RSA_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SSL_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_STDBOOL_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_STDDEF_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_STDIO_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_STROPTS_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_FILIO_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_RESOURCE_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UIO_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UN_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UTSNAME_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_XATTR_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_WINDOWS_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK2_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_WS2TCPIP_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_CURL_OFF_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_INT.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_LONG.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_LONG_LONG.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_OFF_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_SHORT.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_SIG_ATOMIC_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_SIZE_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_SSIZE_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_STRUCT_SOCKADDR_STORAGE.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_TIME_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF___INT64.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\feature_tests.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\curl-config.in;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\libcurl.pc.in;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl -BC:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/built --check-stamp-file C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/built/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeConfigurableFile.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckFunctionExists.c;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.c.in;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.14\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-3.14\Modules\FindCygwin.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPerl.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\CurlSymbolHiding.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\CurlTests.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\Macros.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\OtherTests.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\Platforms\WindowsCache.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\Utilities.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\cmake_uninstall.cmake.in;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMake\curl-config.cmake.in;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMakeLists.txt;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\3.14.0-rc1\CMakeCCompiler.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\3.14.0-rc1\CMakeRCCompiler.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\3.14.0-rc1\CMakeSystem.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_TFTP_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_ASSERT_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_CRYPTO_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_DES_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_ERRNO_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_ERR_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_IDN2_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_IFADDRS_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_KRB_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_LIBGEN_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_LOCALE_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_TCP_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_PEM_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_POLL_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_RSA_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SSL_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_STDBOOL_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_STDDEF_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_STDIO_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_STROPTS_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_FILIO_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_RESOURCE_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UIO_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UN_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UTSNAME_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_SYS_XATTR_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_WINDOWS_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK2_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_WINSOCK_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckIncludeFiles\HAVE_WS2TCPIP_H.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_CURL_OFF_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_INT.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_LONG.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_LONG_LONG.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_OFF_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_SHORT.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_SIG_ATOMIC_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_SIZE_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_SSIZE_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_STRUCT_SOCKADDR_STORAGE.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF_TIME_T.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\CheckTypeSize\SIZEOF___INT64.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\feature_tests.c;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\curl-config.in;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\libcurl.pc.in;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\ZERO_CHECK.vcxproj">
+      <Project>{AC156E9D-3660-384D-A740-76A18F85C970}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\chkdecimalpoint.vcxproj">
+      <Project>{DE95DBF4-FB38-3806-9698-2FCA3AA4EE27}</Project>
+      <Name>chkdecimalpoint</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\chkhostname.vcxproj">
+      <Project>{AB955FF7-F0B0-3CB5-8177-CB91007D6579}</Project>
+      <Name>chkhostname</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\server\disabled.vcxproj">
+      <Project>{4A5EF978-D60C-3CAB-ACF0-EA4938B93F95}</Project>
+      <Name>disabled</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\server\fake_ntlm.vcxproj">
+      <Project>{2E7CEBD7-8676-3DDD-A3E4-A3C6818A3571}</Project>
+      <Name>fake_ntlm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\server\getpart.vcxproj">
+      <Project>{030D0E9B-0067-3448-B597-34D9BFF1EE07}</Project>
+      <Name>getpart</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1156.vcxproj">
+      <Project>{39F69F8D-4274-3329-A8E0-8449C53FA8BD}</Project>
+      <Name>lib1156</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1500.vcxproj">
+      <Project>{4EBC81E6-AACD-307B-8999-1AC9A9E5F38F}</Project>
+      <Name>lib1500</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1501.vcxproj">
+      <Project>{C19A1F35-E6B7-30FB-9D9E-9A301DFECAF1}</Project>
+      <Name>lib1501</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1502.vcxproj">
+      <Project>{3AA95E60-DFBA-36C1-A1A4-DF4ED71C2725}</Project>
+      <Name>lib1502</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1503.vcxproj">
+      <Project>{9230857B-3A42-3075-8998-2C24C5FD08ED}</Project>
+      <Name>lib1503</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1504.vcxproj">
+      <Project>{8A83B967-6FA4-3036-BDB5-150AE6620973}</Project>
+      <Name>lib1504</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1505.vcxproj">
+      <Project>{EB787A65-FBF1-3829-947F-0D297EBA2290}</Project>
+      <Name>lib1505</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1506.vcxproj">
+      <Project>{4984007D-99A5-3BBE-AAE1-C5C6F5F4A8F9}</Project>
+      <Name>lib1506</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1507.vcxproj">
+      <Project>{2AF2E329-2E47-39AC-A65D-929C7AFB1C0A}</Project>
+      <Name>lib1507</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1508.vcxproj">
+      <Project>{3B068D72-4EE7-3A8C-80C6-4260B6E31C1D}</Project>
+      <Name>lib1508</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1509.vcxproj">
+      <Project>{5D431B04-AB39-3F8B-B423-B963015DFF36}</Project>
+      <Name>lib1509</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1510.vcxproj">
+      <Project>{F2B7D619-DD2C-36D6-A837-D7594B06A850}</Project>
+      <Name>lib1510</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1511.vcxproj">
+      <Project>{9B1E5A7D-48BB-3934-84F7-0E710EA68300}</Project>
+      <Name>lib1511</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1512.vcxproj">
+      <Project>{0DC99EC5-497E-3559-A727-DB72B680102B}</Project>
+      <Name>lib1512</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1513.vcxproj">
+      <Project>{93A51D42-D594-3D80-BAC5-E6268C4FDB30}</Project>
+      <Name>lib1513</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1514.vcxproj">
+      <Project>{C34D8C30-18F2-31D2-836F-0F62D7C966D5}</Project>
+      <Name>lib1514</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1515.vcxproj">
+      <Project>{BB51CC03-C587-3658-8CAC-1D93835D95E1}</Project>
+      <Name>lib1515</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1517.vcxproj">
+      <Project>{6ABB68CE-0D24-3BD7-A254-F04D1B637480}</Project>
+      <Name>lib1517</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1518.vcxproj">
+      <Project>{F07AA780-2CEB-31CD-A2EF-7E5760D695E5}</Project>
+      <Name>lib1518</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1520.vcxproj">
+      <Project>{09206101-6D92-30C9-A44B-3BE60B04FD7E}</Project>
+      <Name>lib1520</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1521.vcxproj">
+      <Project>{3EE71DA8-B732-3148-A101-8CD41CE14694}</Project>
+      <Name>lib1521</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1522.vcxproj">
+      <Project>{23DCB8A8-5A4E-3AFF-8D69-D46C5B4C62FA}</Project>
+      <Name>lib1522</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1523.vcxproj">
+      <Project>{28E96A19-FA1A-3594-B51B-8B394985FFD2}</Project>
+      <Name>lib1523</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1525.vcxproj">
+      <Project>{574B5E3A-3D49-35EB-A6CC-AA3D05F4DA1E}</Project>
+      <Name>lib1525</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1526.vcxproj">
+      <Project>{3B77E23A-9848-3E2B-AD3B-C53E1CD44B32}</Project>
+      <Name>lib1526</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1527.vcxproj">
+      <Project>{87435801-F3DA-3FDA-ABB4-64B350CDDBFB}</Project>
+      <Name>lib1527</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1528.vcxproj">
+      <Project>{4D48CEF0-1F0A-3F50-B511-39909C68F2ED}</Project>
+      <Name>lib1528</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1529.vcxproj">
+      <Project>{FD54FF5D-5A59-39BF-A9AF-436BE5363001}</Project>
+      <Name>lib1529</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1530.vcxproj">
+      <Project>{31FBE1F5-973E-3B1E-984F-13F4504CAB98}</Project>
+      <Name>lib1530</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1531.vcxproj">
+      <Project>{96EB67D7-42E3-31EC-9A69-35254AD1E007}</Project>
+      <Name>lib1531</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1532.vcxproj">
+      <Project>{E09FEBF3-4E68-3015-B4D3-5BCF4BFB1209}</Project>
+      <Name>lib1532</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1533.vcxproj">
+      <Project>{6200A086-3798-3A36-A0ED-717C9E904E71}</Project>
+      <Name>lib1533</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1534.vcxproj">
+      <Project>{D47FE2E6-477B-381D-939D-527220B8E4A2}</Project>
+      <Name>lib1534</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1535.vcxproj">
+      <Project>{1A82B014-6E10-33C5-AE06-921A1B4428D0}</Project>
+      <Name>lib1535</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1536.vcxproj">
+      <Project>{E009A535-AF34-3E47-9AEF-FA1C56C48FC2}</Project>
+      <Name>lib1536</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1537.vcxproj">
+      <Project>{4B07114A-B7F4-3F7B-A112-85DD270E19E2}</Project>
+      <Name>lib1537</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1538.vcxproj">
+      <Project>{91ABC0D5-8EA2-3396-B153-3E23032E0247}</Project>
+      <Name>lib1538</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1540.vcxproj">
+      <Project>{18A447D8-6143-3AB8-8C26-9A440AD3F2E9}</Project>
+      <Name>lib1540</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1541.vcxproj">
+      <Project>{08EB1037-E506-3F15-897F-60680F1002ED}</Project>
+      <Name>lib1541</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1550.vcxproj">
+      <Project>{672A65E1-2D79-360A-9EB8-7B41E4206BB1}</Project>
+      <Name>lib1550</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1551.vcxproj">
+      <Project>{03099DC9-E98D-3CC8-B04D-D6132A9DD00E}</Project>
+      <Name>lib1551</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1552.vcxproj">
+      <Project>{E124B09D-9AD1-362D-824A-FEA2CA183996}</Project>
+      <Name>lib1552</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1553.vcxproj">
+      <Project>{A44517DA-2479-3496-904E-48CEB82D1176}</Project>
+      <Name>lib1553</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1554.vcxproj">
+      <Project>{7622181A-EDE5-3F26-A033-C7D60C7E076E}</Project>
+      <Name>lib1554</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1555.vcxproj">
+      <Project>{52BC6261-09B5-3B54-B525-2AA7B7869D77}</Project>
+      <Name>lib1555</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1556.vcxproj">
+      <Project>{5D759107-03C8-3E90-9085-3545F14B5B33}</Project>
+      <Name>lib1556</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1557.vcxproj">
+      <Project>{487C9BE5-C038-3938-81AD-7432CB20D69E}</Project>
+      <Name>lib1557</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1558.vcxproj">
+      <Project>{6D78864E-42B0-3924-8AC4-F5FC217265FB}</Project>
+      <Name>lib1558</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1559.vcxproj">
+      <Project>{689ACAB8-2C5B-37DA-ABBD-6F8A6D4090DE}</Project>
+      <Name>lib1559</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1560.vcxproj">
+      <Project>{EE76838C-85D7-3683-B6F2-82B7D5211EBE}</Project>
+      <Name>lib1560</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1591.vcxproj">
+      <Project>{EE8E7030-ED78-312B-8A2B-3683DE87B488}</Project>
+      <Name>lib1591</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1592.vcxproj">
+      <Project>{2C07DF2A-7CA5-31E6-BE0E-25DE0F2AF771}</Project>
+      <Name>lib1592</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1593.vcxproj">
+      <Project>{34B5FCA0-CAD4-3E38-87BF-DEF5D8E0D1DC}</Project>
+      <Name>lib1593</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1594.vcxproj">
+      <Project>{059EEFF3-8B68-31EF-A289-DBAFC4D3939E}</Project>
+      <Name>lib1594</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1596.vcxproj">
+      <Project>{43A5F134-C9C6-3EC9-96F3-3773CCD6D780}</Project>
+      <Name>lib1596</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1900.vcxproj">
+      <Project>{1CAFC409-6CAA-3172-BD76-00297413EC5B}</Project>
+      <Name>lib1900</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1905.vcxproj">
+      <Project>{46BE7DEA-519F-3F7C-9D32-A91325D3BA7A}</Project>
+      <Name>lib1905</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1906.vcxproj">
+      <Project>{1F972A27-A699-31DA-9254-5C7AF57030ED}</Project>
+      <Name>lib1906</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib1907.vcxproj">
+      <Project>{3FDA30F5-B0AC-3808-A067-6A165A3BD110}</Project>
+      <Name>lib1907</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib2033.vcxproj">
+      <Project>{FA9A98D4-F8C0-378B-8D55-BD35D5A9F828}</Project>
+      <Name>lib2033</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib500.vcxproj">
+      <Project>{8B386500-880A-3B48-82A0-75EA9CD5D31B}</Project>
+      <Name>lib500</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib501.vcxproj">
+      <Project>{F28ADBAE-B8C9-3845-976F-4703C69B2CEF}</Project>
+      <Name>lib501</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib502.vcxproj">
+      <Project>{511A1654-A0C4-3F19-90F6-49C76DFBA7A3}</Project>
+      <Name>lib502</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib503.vcxproj">
+      <Project>{1E898FD0-7673-32FE-9463-A7C9C1CB3B28}</Project>
+      <Name>lib503</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib504.vcxproj">
+      <Project>{34CA0D9B-20EB-3251-AC36-C5CDD5AD138D}</Project>
+      <Name>lib504</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib505.vcxproj">
+      <Project>{B57E49F9-FA69-32A5-8EB8-7806585D34FB}</Project>
+      <Name>lib505</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib506.vcxproj">
+      <Project>{196FCAC7-6AA3-3BBC-933B-FA6BA6F3D6B2}</Project>
+      <Name>lib506</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib507.vcxproj">
+      <Project>{096185AA-FF6F-3BD1-8E04-11387ED397E4}</Project>
+      <Name>lib507</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib508.vcxproj">
+      <Project>{B9DCE28D-0572-38F4-BA8C-1DB8D6370938}</Project>
+      <Name>lib508</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib509.vcxproj">
+      <Project>{CE9E90C0-BE36-35C5-9F16-F343C6221AC1}</Project>
+      <Name>lib509</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib510.vcxproj">
+      <Project>{CBC08622-F5BE-389F-A3F4-C570984AC225}</Project>
+      <Name>lib510</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib511.vcxproj">
+      <Project>{B9FF44A0-CEA3-3DD1-8A62-389A6DA67C64}</Project>
+      <Name>lib511</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib512.vcxproj">
+      <Project>{BA02454F-E3B6-33D9-8D5F-7274136B6530}</Project>
+      <Name>lib512</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib513.vcxproj">
+      <Project>{369AE8CA-E300-3E42-AD45-3B753E039E3F}</Project>
+      <Name>lib513</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib514.vcxproj">
+      <Project>{056D398D-E7FF-3534-8B88-00AADACCA6E5}</Project>
+      <Name>lib514</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib515.vcxproj">
+      <Project>{643B0B24-9BD8-3526-AC9E-C133C07571DB}</Project>
+      <Name>lib515</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib516.vcxproj">
+      <Project>{65A77E0A-A358-35B7-82BE-E9E2164A47A1}</Project>
+      <Name>lib516</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib517.vcxproj">
+      <Project>{D91909E5-3392-3D4E-82CE-A1512AE7C56F}</Project>
+      <Name>lib517</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib518.vcxproj">
+      <Project>{81FE375E-5F6B-34E7-8467-5BAF6BB2B04A}</Project>
+      <Name>lib518</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib519.vcxproj">
+      <Project>{271CB092-59DE-343F-A0CD-D1349BA2E1BD}</Project>
+      <Name>lib519</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib520.vcxproj">
+      <Project>{4241D28B-5696-3793-92E2-6C889057C786}</Project>
+      <Name>lib520</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib521.vcxproj">
+      <Project>{40C92AD7-DE98-3883-B16B-0A2A9F9BC39C}</Project>
+      <Name>lib521</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib523.vcxproj">
+      <Project>{CC87AC76-BBFB-386B-83E5-C85B2BAF9257}</Project>
+      <Name>lib523</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib524.vcxproj">
+      <Project>{E5D7C1A5-29C0-3BFB-BB7B-0EF086BDBDE4}</Project>
+      <Name>lib524</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib525.vcxproj">
+      <Project>{8D41A5E4-3922-3A11-9DC2-3A372B845BB4}</Project>
+      <Name>lib525</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib526.vcxproj">
+      <Project>{E293CF97-54AF-3E7A-A9F5-AC4BFFC492B1}</Project>
+      <Name>lib526</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib527.vcxproj">
+      <Project>{E41C9223-7933-3A4E-B255-994772E9552D}</Project>
+      <Name>lib527</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib529.vcxproj">
+      <Project>{361AC445-C8B9-3114-8A34-04DF2C9FC276}</Project>
+      <Name>lib529</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib530.vcxproj">
+      <Project>{3186D47C-6899-3DB9-B61A-26D7C11FBBEA}</Project>
+      <Name>lib530</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib532.vcxproj">
+      <Project>{A69AA780-8260-3B0D-8167-D05FFD2E8DFC}</Project>
+      <Name>lib532</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib533.vcxproj">
+      <Project>{517390EC-93DD-323E-8194-50E52AD18F25}</Project>
+      <Name>lib533</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib537.vcxproj">
+      <Project>{5AF83B8D-8A42-353A-A30A-9530FB01DC91}</Project>
+      <Name>lib537</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib539.vcxproj">
+      <Project>{66994A49-3273-36B5-9C3D-15DD57382692}</Project>
+      <Name>lib539</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib540.vcxproj">
+      <Project>{D3FC5DB7-3687-3BE6-8EA5-ABDE27D63849}</Project>
+      <Name>lib540</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib541.vcxproj">
+      <Project>{3B037CDE-09B8-300B-8745-5AAD2001DBA4}</Project>
+      <Name>lib541</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib542.vcxproj">
+      <Project>{36E07AF0-15D6-3445-B6C4-BE99E47A163F}</Project>
+      <Name>lib542</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib543.vcxproj">
+      <Project>{8D1F7E97-6D7C-39CF-A409-885B8D3B9555}</Project>
+      <Name>lib543</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib544.vcxproj">
+      <Project>{CFB116B2-6A5E-3CBE-BAAC-0E8D5391A0ED}</Project>
+      <Name>lib544</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib545.vcxproj">
+      <Project>{DDFA0939-CDE4-3CAD-AF20-C3837D1B6EC5}</Project>
+      <Name>lib545</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib547.vcxproj">
+      <Project>{BB3577F6-6C5C-36E2-AEF3-B873EF291E6B}</Project>
+      <Name>lib547</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib548.vcxproj">
+      <Project>{B0C66962-B357-3B4B-9D87-2D04D95F7104}</Project>
+      <Name>lib548</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib549.vcxproj">
+      <Project>{9E6355E8-38A8-3C26-811A-B2B9A581CBC7}</Project>
+      <Name>lib549</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib552.vcxproj">
+      <Project>{24606B23-8532-377B-AF33-FF4191D9B885}</Project>
+      <Name>lib552</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib553.vcxproj">
+      <Project>{514F3C98-6EB0-3084-900C-59103A9FDB03}</Project>
+      <Name>lib553</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib554.vcxproj">
+      <Project>{AA29C437-6BBD-38A2-A0A3-895405C3F713}</Project>
+      <Name>lib554</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib555.vcxproj">
+      <Project>{14E48D0E-612C-3789-98E5-A0F8DFCB73FB}</Project>
+      <Name>lib555</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib556.vcxproj">
+      <Project>{2E7B09A2-73BF-3BC8-91FC-BFF8CE529F07}</Project>
+      <Name>lib556</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib557.vcxproj">
+      <Project>{C5A15BDD-22E0-340C-AAD6-789E544E52FB}</Project>
+      <Name>lib557</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib558.vcxproj">
+      <Project>{BAB5C53B-FEC1-3D75-9A96-6C2AE178A317}</Project>
+      <Name>lib558</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib559.vcxproj">
+      <Project>{AB3B82FB-834A-3421-9892-864A44B83956}</Project>
+      <Name>lib559</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib560.vcxproj">
+      <Project>{CE116476-4828-301A-8171-1DFF3CF80DBF}</Project>
+      <Name>lib560</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib562.vcxproj">
+      <Project>{AE9E29B2-AE89-3560-8FF3-E07308746C4C}</Project>
+      <Name>lib562</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib564.vcxproj">
+      <Project>{36C53F6B-BC56-3D7D-A7CF-EE5945EF75F1}</Project>
+      <Name>lib564</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib565.vcxproj">
+      <Project>{8CD442A0-A417-3ED2-ACEE-435EC3DCBEA9}</Project>
+      <Name>lib565</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib566.vcxproj">
+      <Project>{4B4B6415-A249-3C6B-81D1-008415CFEFF9}</Project>
+      <Name>lib566</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib567.vcxproj">
+      <Project>{651AB0F7-E846-37AE-AEF4-02ED22FB451A}</Project>
+      <Name>lib567</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib568.vcxproj">
+      <Project>{88F1B12D-1EE9-3E6B-8985-629359892DC9}</Project>
+      <Name>lib568</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib569.vcxproj">
+      <Project>{74185868-B598-3401-84EB-810304702E3C}</Project>
+      <Name>lib569</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib570.vcxproj">
+      <Project>{41F3DE71-F449-3312-81E2-AE81DB65DADC}</Project>
+      <Name>lib570</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib571.vcxproj">
+      <Project>{CD7EFE8F-68DA-3325-BF2F-2129867A58E3}</Project>
+      <Name>lib571</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib572.vcxproj">
+      <Project>{B12F7210-4237-30C2-AAFF-BD47414FD811}</Project>
+      <Name>lib572</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib573.vcxproj">
+      <Project>{DB42CAB8-E0A9-35F7-AEBF-86B30EF3B8F1}</Project>
+      <Name>lib573</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib574.vcxproj">
+      <Project>{98EC858E-D8F0-3F6A-AD4C-3A2526A311AB}</Project>
+      <Name>lib574</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib575.vcxproj">
+      <Project>{D2BEBD6F-7018-3AE2-8A94-75BDD45B0BBB}</Project>
+      <Name>lib575</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib576.vcxproj">
+      <Project>{48BA2CBD-90FF-3553-82EC-2D33FADD4AE1}</Project>
+      <Name>lib576</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib578.vcxproj">
+      <Project>{682DE538-1226-3D11-A94E-5E26E619DE51}</Project>
+      <Name>lib578</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib579.vcxproj">
+      <Project>{78DD76C4-E560-3C4F-9C4D-2F0C1F1D6862}</Project>
+      <Name>lib579</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib582.vcxproj">
+      <Project>{A6DF662A-83DE-3B8C-96B4-D57A7BEFFBF0}</Project>
+      <Name>lib582</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib583.vcxproj">
+      <Project>{0C60FA21-5D37-351D-A19A-33E720D19153}</Project>
+      <Name>lib583</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib585.vcxproj">
+      <Project>{441C9013-72F4-38E9-ABC9-0D699A693412}</Project>
+      <Name>lib585</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib586.vcxproj">
+      <Project>{89B47951-5EC1-364D-9DE0-5E3A8ABD9F37}</Project>
+      <Name>lib586</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib587.vcxproj">
+      <Project>{D851CDB8-1196-33BC-8FC1-8389E47360F5}</Project>
+      <Name>lib587</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib589.vcxproj">
+      <Project>{DA62B565-39A5-31E7-A3E6-4274863F2CF0}</Project>
+      <Name>lib589</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib590.vcxproj">
+      <Project>{B74CD5D7-9CFE-3CF1-BA74-1AE8272A0EF2}</Project>
+      <Name>lib590</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib591.vcxproj">
+      <Project>{064234E0-F7AC-301C-9FBA-6F02547D0516}</Project>
+      <Name>lib591</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib597.vcxproj">
+      <Project>{833BF8CD-4939-32FB-BC41-54BB35B2010B}</Project>
+      <Name>lib597</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib598.vcxproj">
+      <Project>{DB6CB95F-E68E-3268-A712-3C5CD75D30C7}</Project>
+      <Name>lib598</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib599.vcxproj">
+      <Project>{992E54A2-D0F3-3BEE-8FE1-A3BF05F3FD35}</Project>
+      <Name>lib599</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib643.vcxproj">
+      <Project>{E586731E-9B7A-3F69-B3C3-5F61321633B9}</Project>
+      <Name>lib643</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib644.vcxproj">
+      <Project>{7AF59054-6527-331F-A92A-808E41211DD3}</Project>
+      <Name>lib644</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib645.vcxproj">
+      <Project>{C2F67299-D2DC-36AE-9263-61CA064D8A72}</Project>
+      <Name>lib645</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib650.vcxproj">
+      <Project>{BB7DE743-BAD7-3F35-AB58-E1640C9A4E89}</Project>
+      <Name>lib650</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib651.vcxproj">
+      <Project>{623799C8-9CFF-307F-A49E-211E027CD1F1}</Project>
+      <Name>lib651</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib652.vcxproj">
+      <Project>{F25B9FDC-24B7-3187-A1DC-E267B85E31BD}</Project>
+      <Name>lib652</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib653.vcxproj">
+      <Project>{C1AFE00E-A3F7-3E90-9D0A-E1D771AF599A}</Project>
+      <Name>lib653</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib654.vcxproj">
+      <Project>{32A2E433-6ADB-3936-85EE-29DDD8477782}</Project>
+      <Name>lib654</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib655.vcxproj">
+      <Project>{44F0B445-FB78-3A4B-ADDC-4F7FEA02B17F}</Project>
+      <Name>lib655</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib658.vcxproj">
+      <Project>{E95D9FAF-B812-3365-9592-C2EC497AE959}</Project>
+      <Name>lib658</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib659.vcxproj">
+      <Project>{BE51E58A-7868-3662-AEB2-01554A132F4E}</Project>
+      <Name>lib659</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\lib661.vcxproj">
+      <Project>{23C4B12C-F5D2-345B-AA29-2C608296BC87}</Project>
+      <Name>lib661</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\libauthretry.vcxproj">
+      <Project>{6DE168FD-D1C2-36A8-A925-F4D8F42EFD22}</Project>
+      <Name>libauthretry</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\libcurl.vcxproj">
+      <Project>{33F6DD82-D3CC-3238-962B-E2D1CF7067A6}</Project>
+      <Name>libcurl</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\libtest\libntlmconnect.vcxproj">
+      <Project>{BAFBFD89-1EF9-31AA-AC7A-E4B6467A1C40}</Project>
+      <Name>libntlmconnect</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\server\resolve.vcxproj">
+      <Project>{C5FEDE2D-B9EA-357C-A4C5-2A5541B150AB}</Project>
+      <Name>resolve</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\server\rtspd.vcxproj">
+      <Project>{AFBC686E-4B47-33E8-8814-22DCF9BE4368}</Project>
+      <Name>rtspd</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\server\sockfilt.vcxproj">
+      <Project>{927DC443-778C-3343-BB5E-E4F25F2779A3}</Project>
+      <Name>sockfilt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\server\socksd.vcxproj">
+      <Project>{856859E7-BBF1-3874-A39F-CA0F41E7FE23}</Project>
+      <Name>socksd</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\server\sws.vcxproj">
+      <Project>{36506079-35BC-3FE3-84A6-4165158C858B}</Project>
+      <Name>sws</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\tests\server\tftpd.vcxproj">
+      <Project>{0F8EDF97-7D1E-38F6-89AA-CD4CDF8C446F}</Project>
+      <Name>tftpd</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
