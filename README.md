@@ -1,6 +1,7 @@
-# CEC-CSC160-Final-Project
+# CEC CSC 160 Final Project
 
-**CEC-Consortium**
+**Description**
+This final project consists of a set of games which can be launched using a central UI.
 
 # Build Dependencies
 
