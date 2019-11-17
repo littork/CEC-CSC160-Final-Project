@@ -33,6 +33,8 @@ int main(int argc, char* argv[]) {
 
 	std::system("pause");*/
 
+	std::cout << "Autoupdater\n";
+
 	const std::string targetPath = argv[1];
 	const std::string targetURL = argv[2];
 
