@@ -6,13 +6,24 @@ void multiline(List<String> commands) {
 pipeline {
 	agent any
 	stages {
-		stage('Configure CURL') {
+		stage('Configure CURL Build') {
 			parallel {
 				stage('Run CMake') {
 					steps {
 						echo 'Beginning Static Library CMake'
 						bat "cmake -H./curl -B./curl/built -DBUILD_SHARED_LIBS=OFF"
 					}
+				}
+			}
+		}
+		stage('Enable CURL SSL Support') {
+			parallel {
+				stage('Preprocessor Definitions') {
+					bat multiline([
+						"echo \"#define USE_SSLEAY\n#define USE_OPENSSL\" > setup.txt",
+						"type curl/built/lib/curl_config.h >> setup.txt",
+						"type setup.txt > curl/built/lib/curl_config.h"
+					])
 				}
 			}
 		}
@@ -24,7 +35,7 @@ pipeline {
 						bat multiline([
 							"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x86_x64",
 							"set _CL_=/MTd",
-							"Msbuild.exe ./curl/built/lib/libcurl.vcxproj /p:Configuration=Debug /p:SolutionDir=../../../ /property:DefineConstants=USE_OPENSSL"
+							"Msbuild.exe ./curl/built/lib/libcurl.vcxproj /p:Configuration=Debug /p:SolutionDir=../../../"
 						])
 						bat "echo f | xcopy /f /y \"./curl/built/lib/Debug/libcurl-d.lib\" \"./build/libcurl/x64/Debug/libcurl.lib\""
 					}
@@ -35,7 +46,7 @@ pipeline {
 						bat multiline([
 							"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x86_x64",
 							"set _CL_=/MT",
-							"Msbuild.exe ./curl/built/lib/libcurl.vcxproj /p:Configuration=Release /p:SolutionDir=../../../ /property:DefineConstants=USE_OPENSSL"
+							"Msbuild.exe ./curl/built/lib/libcurl.vcxproj /p:Configuration=Release /p:SolutionDir=../../../"
 						])
 						bat "echo f | xcopy /f /y \"./curl/built/lib/Release/libcurl.lib\" \"./build/libcurl/x64/Release/libcurl.lib\""
 					}

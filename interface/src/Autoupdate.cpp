@@ -34,8 +34,7 @@ void Autoupdate::begin() {
 	}
 
 	if (res != CURLE_OK) {
-		nana::msgbox m(NULL, "Error");
-		m << "Failed to check for updates ";
+		nana::msgbox m(NULL, "Failed to check for updates");
 		m << error;
 		m();
 	}
