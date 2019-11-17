@@ -23,6 +23,7 @@ pipeline {
 						echo 'Beginning Debug x64 Build'
 						bat multiline([
 							"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x86_x64",
+							"set _CL_=/MTd",
 							"Msbuild.exe ./curl/built/lib/libcurl.vcxproj /p:Configuration=Debug /p:SolutionDir=../../../"
 						])
 						bat "echo f | xcopy /f /y \"./curl/built/lib/Debug/libcurl-d.lib\" \"./build/libcurl/x64/Debug/libcurl.lib\""
@@ -33,6 +34,7 @@ pipeline {
 						echo 'Beginning Release x64 Build'
 						bat multiline([
 							"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x86_x64",
+							"set _CL_=/MT",
 							"Msbuild.exe ./curl/built/lib/libcurl.vcxproj /p:Configuration=Release /p:SolutionDir=../../../"
 						])
 						bat "echo f | xcopy /f /y \"./curl/built/lib/Release/libcurl.lib\" \"./build/libcurl/x64/Release/libcurl.lib\""
