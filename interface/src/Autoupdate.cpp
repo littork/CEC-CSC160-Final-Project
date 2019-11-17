@@ -123,9 +123,9 @@ bool Autoupdate::check() {
 				si.wShowWindow = SW_HIDE;
 				PROCESS_INFORMATION pi;
 				
-				std::string cmd = std::string(strPath + AUTOUPDATER_EXECUTABLE);
-				LPSTR cmdArgs = const_cast<LPSTR>(std::string("Autoupdater \"" + cmd + "\" \"" + RELEASES_URL + remoteBuildNumber + "/" + INTERFACE_EXECUTABLE_REMOTE + "\"").c_str());
+				LPSTR cmdArgs = const_cast<LPSTR>(std::string("Autoupdater \"" + std::string(path) + "\" \"" + RELEASES_URL + remoteBuildNumber + "/" + INTERFACE_EXECUTABLE_REMOTE + "\"").c_str());
 
+				std::string cmd = std::string(strPath + AUTOUPDATER_EXECUTABLE);
 				CreateProcess(cmd.c_str(), cmdArgs, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi);
 			}
 
