@@ -100,7 +100,7 @@ int main(int argc, char* argv[]) {
 		si.wShowWindow = SW_HIDE;
 		PROCESS_INFORMATION pi;
 		std::string cmd = std::string(targetPath);
-		CreateProcess(cmd.c_str(), NULL, NULL, NULL, FALSE, CREATE_NEW_CONSOLE, NULL, NULL, &si, &pi);
+		CreateProcess(cmd.c_str(), NULL, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi);
 	}
 
 	return 0;
