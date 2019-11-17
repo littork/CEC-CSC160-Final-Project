@@ -33,10 +33,13 @@ int main(int argc, char* argv[]) {
 
 	std::system("pause");*/
 
-	std::cout << "Autoupdater\n";
+	std::cout << "Autoupdater: Beginning auto update\n";
 
 	const std::string targetPath = argv[1];
 	const std::string targetURL = argv[2];
+
+	std::cout << "Target path: " << targetPath << std::endl;
+	std::cout << "Target url: " << targetURL << std::endl;
 
 	{ // Restart interface
 		STARTUPINFO si = {sizeof(STARTUPINFO)};
@@ -47,13 +50,6 @@ int main(int argc, char* argv[]) {
 		std::string cmd = std::string(targetPath);
 		CreateProcess(cmd.c_str(), NULL, NULL, NULL, FALSE, CREATE_NO_WINDOW, NULL, NULL, &si, &pi);
 	}
-
-	std::ofstream testfile;
-	testfile.open("test.txt");
-	testfile << "Test output\n";
-	testfile.close();
-
-	std::system("pause");
 
 	return 0;
 }

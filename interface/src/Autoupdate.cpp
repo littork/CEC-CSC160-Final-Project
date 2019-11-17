@@ -124,7 +124,7 @@ bool Autoupdate::check() {
 				PROCESS_INFORMATION pi;
 				
 				std::string cmd = std::string(strPath + AUTOUPDATER_EXECUTABLE);
-				LPSTR cmdArgs = const_cast<LPSTR>(std::string("Autoupdater " + cmd).c_str());
+				LPSTR cmdArgs = const_cast<LPSTR>(std::string("Autoupdater \"" + cmd + "\" \"" + RELEASES_URL + remoteBuildNumber + "/" + INTERFACE_EXECUTABLE_REMOTE + "\"").c_str());
 
 				CreateProcess(cmd.c_str(), cmdArgs, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi);
 			}

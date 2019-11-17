@@ -6,6 +6,7 @@
 #define RELEASES_URL "https://github.com/littork/CEC-CSC160-Final-Project/releases/download/%23"
 
 #define AUTOUPDATER_EXECUTABLE "autoupdater.exe"
+#define INTERFACE_EXECUTABLE_REMOTE "interface.exe"
 
 // Colors
 
