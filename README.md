@@ -2,10 +2,8 @@
 
 **CEC-Consortium**
 
-# Dependencies
+# Build Dependencies
 
-Jenkins
-
--   Blue Ocean
--   github-release in path
-    CMake
+-   Jenkins
+-   github-release
+-   CMake

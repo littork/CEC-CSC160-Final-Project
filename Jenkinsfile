@@ -11,7 +11,7 @@ pipeline {
 				stage('Run CMake') {
 					steps {
 						echo 'Beginning Static Library CMake'
-						bat "CMake.exe -B./curl -H./built -DBUILD_SHARED_LIBS=OFF"
+						bat "cmake -B./curl -H./built -DBUILD_SHARED_LIBS=OFF"
 					}
 				}
 			}
