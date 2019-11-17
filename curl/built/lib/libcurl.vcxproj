@@ -78,7 +78,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\built\lib\..\include;$(SolutionDir)curl\lib\..;$(SolutionDir)curl\lib\..\include;$(SolutionDir)curl\built\lib\..;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>
@@ -113,7 +113,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\built\lib\..\include;$(SolutionDir)curl\lib\..;$(SolutionDir)curl\lib\..\include;$(SolutionDir)curl\built\lib\..;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <DisableSpecificWarnings>4127</DisableSpecificWarnings>
@@ -148,7 +148,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\built\lib\..\include;$(SolutionDir)curl\lib\..;$(SolutionDir)curl\lib\..\include;$(SolutionDir)curl\built\lib\..;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <DisableSpecificWarnings>4127</DisableSpecificWarnings>
@@ -183,7 +183,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\built\lib\..\include;$(SolutionDir)curl\lib\..;$(SolutionDir)curl\lib\..\include;$(SolutionDir)curl\built\lib\..;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
