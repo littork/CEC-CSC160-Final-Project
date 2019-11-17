@@ -21,11 +21,11 @@ pipeline {
 				stage('Preprocessor Definitions') {
 					steps {
 						bat "echo \"#define USE_SSLEAY\" > setup.txt"
-						bat "type curl/built/lib/curl_config.h >> setup.txt"
-						bat "type setup.txt > curl/built/lib/curl_config.h"
-						bat "echo \"#define USE_OPENSSL\" > setup.txt"
-						bat "type curl/built/lib/curl_config.h >> setup.txt"
-						bat "type setup.txt > curl/built/lib/curl_config.h"
+						bat "type \"curl/built/lib/curl_config.h\" >> \"setup.txt\""
+						bat "type \"setup.txt\" > \"curl/built/lib/curl_config.h\""
+						bat "echo \"#define USE_OPENSSL\" > \"setup.txt\""
+						bat "type \"curl/built/lib/curl_config.h\" >> \"setup.txt\""
+						bat "type \"setup.txt\" > \"curl/built/lib/curl_config.h\""
 					}
 				}
 			}
