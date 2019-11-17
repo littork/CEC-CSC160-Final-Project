@@ -21,7 +21,7 @@ pipeline {
 				stage('Preprocessor Definitions') {
 					steps {
 						bat multiline([
-							"echo \"#define USE_SSLEAY\n#define USE_OPENSSL\" > setup.txt",
+							"echo -e \"#define USE_SSLEAY\n#define USE_OPENSSL\" > setup.txt",
 							"type curl/built/lib/curl_config.h >> setup.txt",
 							"type setup.txt > curl/built/lib/curl_config.h"
 						])
