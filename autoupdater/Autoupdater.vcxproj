@@ -73,22 +73,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>$(SolutionDir)build\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</OutDir>
     <IntDir>intermediate\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
-    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\Program Files\OpenSSL-Win64\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)build\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</OutDir>
     <IntDir>intermediate\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
-    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\Program Files\OpenSSL-Win64\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)build\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</OutDir>
     <IntDir>intermediate\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
-    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\Program Files\OpenSSL-Win64\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)build\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</OutDir>
     <IntDir>intermediate\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
-    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\Program Files\OpenSSL-Win64\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -101,7 +101,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>ws2_32.lib;wldap32.lib;crypt32.lib;$(SolutionDir)build\libcurl\x$(PlatformArchitecture)\$(Configuration)\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>VC/static/libcrypto64MDd.lib;VC/static/libssl64MDd.lib;capi.lib;dasync.lib;libapps.lib;libtestutil.lib;openssl.lib;ossltest.lib;padlock.lib;uitest.lib;ws2_32.lib;wldap32.lib;crypt32.lib;$(SolutionDir)build\libcurl\x$(PlatformArchitecture)\$(Configuration)\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -115,7 +115,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>ws2_32.lib;wldap32.lib;crypt32.lib;$(SolutionDir)build\libcurl\x$(PlatformArchitecture)\$(Configuration)\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>capi.lib;dasync.lib;libapps.lib;libcrypto_static.lib;libssl_static.lib;libtestutil.lib;openssl.lib;ossltest.lib;padlock.lib;uitest.lib;ws2_32.lib;wldap32.lib;crypt32.lib;$(SolutionDir)build\libcurl\x$(PlatformArchitecture)\$(Configuration)\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -133,7 +133,7 @@
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>ws2_32.lib;wldap32.lib;crypt32.lib;$(SolutionDir)build\libcurl\x$(PlatformArchitecture)\$(Configuration)\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>capi.lib;dasync.lib;libapps.lib;libcrypto_static.lib;libssl_static.lib;libtestutil.lib;openssl.lib;ossltest.lib;padlock.lib;uitest.lib;ws2_32.lib;wldap32.lib;crypt32.lib;$(SolutionDir)build\libcurl\x$(PlatformArchitecture)\$(Configuration)\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -151,7 +151,7 @@
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>ws2_32.lib;wldap32.lib;crypt32.lib;$(SolutionDir)build\libcurl\x$(PlatformArchitecture)\$(Configuration)\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>VC/static/libcrypto64MD.lib;VC/static/libssl64MD.lib;capi.lib;dasync.lib;libapps.lib;libtestutil.lib;openssl.lib;ossltest.lib;padlock.lib;uitest.lib;ws2_32.lib;wldap32.lib;crypt32.lib;$(SolutionDir)build\libcurl\x$(PlatformArchitecture)\$(Configuration)\libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
