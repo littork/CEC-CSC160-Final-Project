@@ -89,6 +89,9 @@ int main(int argc, char* argv[]) {
 		curl_easy_cleanup(curl);
 	}
 
+	// Settle things
+	Sleep(2500);
+
 	{ // Restart interface
 		std::cout << "Restarting interface\n";
 		STARTUPINFO si = {sizeof(STARTUPINFO)};
@@ -97,7 +100,7 @@ int main(int argc, char* argv[]) {
 		si.wShowWindow = SW_HIDE;
 		PROCESS_INFORMATION pi;
 		std::string cmd = std::string(targetPath);
-		CreateProcess(cmd.c_str(), NULL, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi);
+		CreateProcess(cmd.c_str(), NULL, NULL, NULL, FALSE, CREATE_NEW_CONSOLE, NULL, NULL, &si, &pi);
 	}
 
 	return 0;
