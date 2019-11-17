@@ -97,10 +97,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;CURL_EMBED_MANIFEST;_DEBUG;_WINDOWS;BUILDING_LIBCURL;CURL_HIDDEN_SYMBOLS;_WIN32_WINNT=0x0600;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_USRDLL;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\built\lib\..\include;$(SolutionDir)curl\lib\..;$(SolutionDir)curl\lib\..\include;$(SolutionDir)curl\built\lib\..;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\built\lib\..\include;$(SolutionDir)curl\lib\..;$(SolutionDir)curl\lib\..\include;$(SolutionDir)curl\built\lib\..;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -132,10 +132,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;CURL_EMBED_MANIFEST;_WINDOWS;NDEBUG;BUILDING_LIBCURL;CURL_HIDDEN_SYMBOLS;_WIN32_WINNT=0x0600;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_USRDLL;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\built\lib\..\include;$(SolutionDir)curl\lib\..;$(SolutionDir)curl\lib\..\include;$(SolutionDir)curl\built\lib\..;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\built\lib\..\include;$(SolutionDir)curl\lib\..;$(SolutionDir)curl\lib\..\include;$(SolutionDir)curl\built\lib\..;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -167,10 +167,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;CURL_EMBED_MANIFEST;_WINDOWS;NDEBUG;BUILDING_LIBCURL;CURL_HIDDEN_SYMBOLS;_WIN32_WINNT=0x0600;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_USRDLL;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\built\lib\..\include;$(SolutionDir)curl\lib\..;$(SolutionDir)curl\lib\..\include;$(SolutionDir)curl\built\lib\..;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\built\lib\..\include;$(SolutionDir)curl\lib\..;$(SolutionDir)curl\lib\..\include;$(SolutionDir)curl\built\lib\..;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -201,10 +201,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;CURL_EMBED_MANIFEST;_WINDOWS;NDEBUG;BUILDING_LIBCURL;CURL_HIDDEN_SYMBOLS;_WIN32_WINNT=0x0600;HAVE_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_USRDLL;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\built\lib\..\include;$(SolutionDir)curl\lib\..;$(SolutionDir)curl\lib\..\include;$(SolutionDir)curl\built\lib\..;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\..\include;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\..;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)curl\include;$(SolutionDir)curl\built\lib\..\include;$(SolutionDir)curl\lib\..;$(SolutionDir)curl\lib\..\include;$(SolutionDir)curl\built\lib\..;$(SolutionDir)curl\lib;$(SolutionDir)curl\built\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -216,7 +216,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\CMakeLists.txt">
+    <CustomBuild Include="$(SolutionDir)curl\lib\CMakeLists.txt">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/lib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl -BC:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/built --check-stamp-file C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/built/lib/CMakeFiles/generate.stamp
@@ -227,8 +227,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/lib/CMakeLists.txt;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\Makefile.inc.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\CMakeLists.txt;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_config.h.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/lib/CMakeLists.txt;$(SolutionDir)curl\built\lib\Makefile.inc.cmake;$(SolutionDir)curl\lib\CMakeLists.txt;$(SolutionDir)curl\lib\curl_config.h.cmake;$(SolutionDir)curl\lib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)curl\built\lib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/lib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
@@ -240,8 +240,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/lib/CMakeLists.txt;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\Makefile.inc.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\CMakeLists.txt;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_config.h.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/lib/CMakeLists.txt;$(SolutionDir)curl\built\lib\Makefile.inc.cmake;$(SolutionDir)curl\lib\CMakeLists.txt;$(SolutionDir)curl\lib\curl_config.h.cmake;$(SolutionDir)curl\lib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)curl\built\lib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/lib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
@@ -253,8 +253,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/lib/CMakeLists.txt;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\Makefile.inc.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\CMakeLists.txt;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_config.h.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/lib/CMakeLists.txt;$(SolutionDir)curl\built\lib\Makefile.inc.cmake;$(SolutionDir)curl\lib\CMakeLists.txt;$(SolutionDir)curl\lib\curl_config.h.cmake;$(SolutionDir)curl\lib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(SolutionDir)curl\built\lib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/lib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
@@ -266,285 +266,285 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/lib/CMakeLists.txt;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\Makefile.inc.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\CMakeLists.txt;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_config.h.cmake;C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Dylan/Desktop/CEC-CSC160-Final-Project/curl/lib/CMakeLists.txt;$(SolutionDir)curl\built\lib\Makefile.inc.cmake;$(SolutionDir)curl\lib\CMakeLists.txt;$(SolutionDir)curl\lib\curl_config.h.cmake;$(SolutionDir)curl\lib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(SolutionDir)curl\built\lib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\arpa_telnet.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\netrc.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\file.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\timeval.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hostip.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\progress.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\formdata.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\cookie.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\sendf.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\ftp.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\url.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\dict.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\if2ip.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\speedcheck.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\urldata.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_ldap.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\escape.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\telnet.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\getinfo.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strcase.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_sec.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\memdebug.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http_chunks.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_fnmatch.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\wildcard.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\fileinfo.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\ftplistparser.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strtok.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\connect.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\llist.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hash.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\content_encoding.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\share.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_md4.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_md5.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http_digest.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http_negotiate.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\inet_pton.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\amigaos.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strtoofft.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strerror.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\inet_ntop.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curlx.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_memory.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_setup.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\transfer.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\select.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\easyif.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\multiif.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\parsedate.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\tftp.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\sockaddr.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\splay.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strdup.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\socks.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\ssh.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_base64.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_addrinfo.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_sspi.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\slist.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\nonblock.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_memrchr.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\imap.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\pop3.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\smtp.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\pingpong.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\rtsp.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_threads.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\warnless.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_hmac.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_rtmp.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_gethostname.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\gopher.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http_proxy.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\non-ascii.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\asyn.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http_ntlm.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_gssapi.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_ntlm_wb.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_ntlm_core.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_sasl.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_multibyte.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hostcheck.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\conncache.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_setup_once.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\multihandle.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\setup-vms.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\dotdot.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\x509asn1.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http2.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\sigpipe.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\smb.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_endian.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_des.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_printf.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\system_win32.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\rand.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\mime.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_sha256.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\setopt.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_path.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_ctype.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_range.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\psl.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\doh.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\urlapi-int.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_get_line.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\altsvc.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\quic.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\socketpair.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\vauth.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\digest.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\ntlm.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\openssl.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\vtls.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\gtls.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\nssg.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\polarssl.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\polarssl_threadlock.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\wolfssl.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\schannel.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\sectransp.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\gskit.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\mbedtls.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\mesalink.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vquic\ngtcp2.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vquic\quiche.h" />
-    <ClInclude Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\lib\curl_config.h" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\file.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\timeval.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\base64.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hostip.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\progress.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\formdata.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\cookie.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\sendf.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\ftp.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\url.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\dict.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\if2ip.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\speedcheck.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\ldap.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\version.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\getenv.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\escape.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\mprintf.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\telnet.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\netrc.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\getinfo.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\transfer.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strcase.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\easy.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\security.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_fnmatch.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\fileinfo.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\ftplistparser.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\wildcard.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\krb5.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\memdebug.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http_chunks.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strtok.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\connect.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\llist.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hash.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\multi.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\content_encoding.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\share.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http_digest.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\md4.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\md5.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http_negotiate.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\inet_pton.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strtoofft.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strerror.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\amigaos.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hostasyn.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hostip4.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hostip6.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hostsyn.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\inet_ntop.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\parsedate.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\select.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\tftp.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\splay.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\strdup.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\socks.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_addrinfo.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\socks_gssapi.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\socks_sspi.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_sspi.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\slist.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\nonblock.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_memrchr.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\imap.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\pop3.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\smtp.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\pingpong.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\rtsp.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_threads.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\warnless.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hmac.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_rtmp.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\openldap.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_gethostname.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\gopher.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\idn_win32.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http_proxy.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\non-ascii.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\asyn-ares.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\asyn-thread.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_gssapi.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http_ntlm.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_ntlm_wb.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_ntlm_core.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_sasl.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\rand.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_multibyte.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\hostcheck.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\conncache.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\dotdot.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\x509asn1.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\http2.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\smb.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_endian.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_des.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\system_win32.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\mime.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\sha256.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\setopt.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_path.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_ctype.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_range.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\psl.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\doh.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\urlapi.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\curl_get_line.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\altsvc.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\socketpair.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\vauth.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\cleartext.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\cram.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\digest.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\digest_sspi.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\krb5_gssapi.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\krb5_sspi.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\ntlm.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\ntlm_sspi.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\oauth2.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\spnego_gssapi.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vauth\spnego_sspi.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\openssl.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\gtls.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\vtls.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\nss.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\polarssl.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\polarssl_threadlock.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\wolfssl.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\schannel.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\schannel_verify.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\sectransp.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\gskit.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\mbedtls.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vtls\mesalink.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vquic\ngtcp2.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vquic\quiche.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vssh\libssh2.c" />
-    <ClCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\vssh\libssh.c" />
-    <ResourceCompile Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\lib\libcurl.rc" />
+    <ClInclude Include="..\..\..\curl\lib\arpa_telnet.h" />
+    <ClInclude Include="..\..\..\curl\lib\netrc.h" />
+    <ClInclude Include="..\..\..\curl\lib\file.h" />
+    <ClInclude Include="..\..\..\curl\lib\timeval.h" />
+    <ClInclude Include="..\..\..\curl\lib\hostip.h" />
+    <ClInclude Include="..\..\..\curl\lib\progress.h" />
+    <ClInclude Include="..\..\..\curl\lib\formdata.h" />
+    <ClInclude Include="..\..\..\curl\lib\cookie.h" />
+    <ClInclude Include="..\..\..\curl\lib\http.h" />
+    <ClInclude Include="..\..\..\curl\lib\sendf.h" />
+    <ClInclude Include="..\..\..\curl\lib\ftp.h" />
+    <ClInclude Include="..\..\..\curl\lib\url.h" />
+    <ClInclude Include="..\..\..\curl\lib\dict.h" />
+    <ClInclude Include="..\..\..\curl\lib\if2ip.h" />
+    <ClInclude Include="..\..\..\curl\lib\speedcheck.h" />
+    <ClInclude Include="..\..\..\curl\lib\urldata.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_ldap.h" />
+    <ClInclude Include="..\..\..\curl\lib\escape.h" />
+    <ClInclude Include="..\..\..\curl\lib\telnet.h" />
+    <ClInclude Include="..\..\..\curl\lib\getinfo.h" />
+    <ClInclude Include="..\..\..\curl\lib\strcase.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_sec.h" />
+    <ClInclude Include="..\..\..\curl\lib\memdebug.h" />
+    <ClInclude Include="..\..\..\curl\lib\http_chunks.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_fnmatch.h" />
+    <ClInclude Include="..\..\..\curl\lib\wildcard.h" />
+    <ClInclude Include="..\..\..\curl\lib\fileinfo.h" />
+    <ClInclude Include="..\..\..\curl\lib\ftplistparser.h" />
+    <ClInclude Include="..\..\..\curl\lib\strtok.h" />
+    <ClInclude Include="..\..\..\curl\lib\connect.h" />
+    <ClInclude Include="..\..\..\curl\lib\llist.h" />
+    <ClInclude Include="..\..\..\curl\lib\hash.h" />
+    <ClInclude Include="..\..\..\curl\lib\content_encoding.h" />
+    <ClInclude Include="..\..\..\curl\lib\share.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_md4.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_md5.h" />
+    <ClInclude Include="..\..\..\curl\lib\http_digest.h" />
+    <ClInclude Include="..\..\..\curl\lib\http_negotiate.h" />
+    <ClInclude Include="..\..\..\curl\lib\inet_pton.h" />
+    <ClInclude Include="..\..\..\curl\lib\amigaos.h" />
+    <ClInclude Include="..\..\..\curl\lib\strtoofft.h" />
+    <ClInclude Include="..\..\..\curl\lib\strerror.h" />
+    <ClInclude Include="..\..\..\curl\lib\inet_ntop.h" />
+    <ClInclude Include="..\..\..\curl\lib\curlx.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_memory.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_setup.h" />
+    <ClInclude Include="..\..\..\curl\lib\transfer.h" />
+    <ClInclude Include="..\..\..\curl\lib\select.h" />
+    <ClInclude Include="..\..\..\curl\lib\easyif.h" />
+    <ClInclude Include="..\..\..\curl\lib\multiif.h" />
+    <ClInclude Include="..\..\..\curl\lib\parsedate.h" />
+    <ClInclude Include="..\..\..\curl\lib\tftp.h" />
+    <ClInclude Include="..\..\..\curl\lib\sockaddr.h" />
+    <ClInclude Include="..\..\..\curl\lib\splay.h" />
+    <ClInclude Include="..\..\..\curl\lib\strdup.h" />
+    <ClInclude Include="..\..\..\curl\lib\socks.h" />
+    <ClInclude Include="..\..\..\curl\lib\ssh.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_base64.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_addrinfo.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_sspi.h" />
+    <ClInclude Include="..\..\..\curl\lib\slist.h" />
+    <ClInclude Include="..\..\..\curl\lib\nonblock.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_memrchr.h" />
+    <ClInclude Include="..\..\..\curl\lib\imap.h" />
+    <ClInclude Include="..\..\..\curl\lib\pop3.h" />
+    <ClInclude Include="..\..\..\curl\lib\smtp.h" />
+    <ClInclude Include="..\..\..\curl\lib\pingpong.h" />
+    <ClInclude Include="..\..\..\curl\lib\rtsp.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_threads.h" />
+    <ClInclude Include="..\..\..\curl\lib\warnless.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_hmac.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_rtmp.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_gethostname.h" />
+    <ClInclude Include="..\..\..\curl\lib\gopher.h" />
+    <ClInclude Include="..\..\..\curl\lib\http_proxy.h" />
+    <ClInclude Include="..\..\..\curl\lib\non-ascii.h" />
+    <ClInclude Include="..\..\..\curl\lib\asyn.h" />
+    <ClInclude Include="..\..\..\curl\lib\http_ntlm.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_gssapi.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_ntlm_wb.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_ntlm_core.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_sasl.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_multibyte.h" />
+    <ClInclude Include="..\..\..\curl\lib\hostcheck.h" />
+    <ClInclude Include="..\..\..\curl\lib\conncache.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_setup_once.h" />
+    <ClInclude Include="..\..\..\curl\lib\multihandle.h" />
+    <ClInclude Include="..\..\..\curl\lib\setup-vms.h" />
+    <ClInclude Include="..\..\..\curl\lib\dotdot.h" />
+    <ClInclude Include="..\..\..\curl\lib\x509asn1.h" />
+    <ClInclude Include="..\..\..\curl\lib\http2.h" />
+    <ClInclude Include="..\..\..\curl\lib\sigpipe.h" />
+    <ClInclude Include="..\..\..\curl\lib\smb.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_endian.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_des.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_printf.h" />
+    <ClInclude Include="..\..\..\curl\lib\system_win32.h" />
+    <ClInclude Include="..\..\..\curl\lib\rand.h" />
+    <ClInclude Include="..\..\..\curl\lib\mime.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_sha256.h" />
+    <ClInclude Include="..\..\..\curl\lib\setopt.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_path.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_ctype.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_range.h" />
+    <ClInclude Include="..\..\..\curl\lib\psl.h" />
+    <ClInclude Include="..\..\..\curl\lib\doh.h" />
+    <ClInclude Include="..\..\..\curl\lib\urlapi-int.h" />
+    <ClInclude Include="..\..\..\curl\lib\curl_get_line.h" />
+    <ClInclude Include="..\..\..\curl\lib\altsvc.h" />
+    <ClInclude Include="..\..\..\curl\lib\quic.h" />
+    <ClInclude Include="..\..\..\curl\lib\socketpair.h" />
+    <ClInclude Include="..\..\..\curl\lib\vauth\vauth.h" />
+    <ClInclude Include="..\..\..\curl\lib\vauth\digest.h" />
+    <ClInclude Include="..\..\..\curl\lib\vauth\ntlm.h" />
+    <ClInclude Include="..\..\..\curl\lib\vtls\openssl.h" />
+    <ClInclude Include="..\..\..\curl\lib\vtls\vtls.h" />
+    <ClInclude Include="..\..\..\curl\lib\vtls\gtls.h" />
+    <ClInclude Include="..\..\..\curl\lib\vtls\nssg.h" />
+    <ClInclude Include="..\..\..\curl\lib\vtls\polarssl.h" />
+    <ClInclude Include="..\..\..\curl\lib\vtls\polarssl_threadlock.h" />
+    <ClInclude Include="..\..\..\curl\lib\vtls\wolfssl.h" />
+    <ClInclude Include="..\..\..\curl\lib\vtls\schannel.h" />
+    <ClInclude Include="..\..\..\curl\lib\vtls\sectransp.h" />
+    <ClInclude Include="..\..\..\curl\lib\vtls\gskit.h" />
+    <ClInclude Include="..\..\..\curl\lib\vtls\mbedtls.h" />
+    <ClInclude Include="..\..\..\curl\lib\vtls\mesalink.h" />
+    <ClInclude Include="..\..\..\curl\lib\vquic\ngtcp2.h" />
+    <ClInclude Include="..\..\..\curl\lib\vquic\quiche.h" />
+    <ClInclude Include="..\..\..\curl\built\lib\curl_config.h" />
+    <ClCompile Include="..\..\..\curl\lib\file.c" />
+    <ClCompile Include="..\..\..\curl\lib\timeval.c" />
+    <ClCompile Include="..\..\..\curl\lib\base64.c" />
+    <ClCompile Include="..\..\..\curl\lib\hostip.c" />
+    <ClCompile Include="..\..\..\curl\lib\progress.c" />
+    <ClCompile Include="..\..\..\curl\lib\formdata.c" />
+    <ClCompile Include="..\..\..\curl\lib\cookie.c" />
+    <ClCompile Include="..\..\..\curl\lib\http.c" />
+    <ClCompile Include="..\..\..\curl\lib\sendf.c" />
+    <ClCompile Include="..\..\..\curl\lib\ftp.c" />
+    <ClCompile Include="..\..\..\curl\lib\url.c" />
+    <ClCompile Include="..\..\..\curl\lib\dict.c" />
+    <ClCompile Include="..\..\..\curl\lib\if2ip.c" />
+    <ClCompile Include="..\..\..\curl\lib\speedcheck.c" />
+    <ClCompile Include="..\..\..\curl\lib\ldap.c" />
+    <ClCompile Include="..\..\..\curl\lib\version.c" />
+    <ClCompile Include="..\..\..\curl\lib\getenv.c" />
+    <ClCompile Include="..\..\..\curl\lib\escape.c" />
+    <ClCompile Include="..\..\..\curl\lib\mprintf.c" />
+    <ClCompile Include="..\..\..\curl\lib\telnet.c" />
+    <ClCompile Include="..\..\..\curl\lib\netrc.c" />
+    <ClCompile Include="..\..\..\curl\lib\getinfo.c" />
+    <ClCompile Include="..\..\..\curl\lib\transfer.c" />
+    <ClCompile Include="..\..\..\curl\lib\strcase.c" />
+    <ClCompile Include="..\..\..\curl\lib\easy.c" />
+    <ClCompile Include="..\..\..\curl\lib\security.c" />
+    <ClCompile Include="..\..\..\curl\lib\curl_fnmatch.c" />
+    <ClCompile Include="..\..\..\curl\lib\fileinfo.c" />
+    <ClCompile Include="..\..\..\curl\lib\ftplistparser.c" />
+    <ClCompile Include="..\..\..\curl\lib\wildcard.c" />
+    <ClCompile Include="..\..\..\curl\lib\krb5.c" />
+    <ClCompile Include="..\..\..\curl\lib\memdebug.c" />
+    <ClCompile Include="..\..\..\curl\lib\http_chunks.c" />
+    <ClCompile Include="..\..\..\curl\lib\strtok.c" />
+    <ClCompile Include="..\..\..\curl\lib\connect.c" />
+    <ClCompile Include="..\..\..\curl\lib\llist.c" />
+    <ClCompile Include="..\..\..\curl\lib\hash.c" />
+    <ClCompile Include="..\..\..\curl\lib\multi.c" />
+    <ClCompile Include="..\..\..\curl\lib\content_encoding.c" />
+    <ClCompile Include="..\..\..\curl\lib\share.c" />
+    <ClCompile Include="..\..\..\curl\lib\http_digest.c" />
+    <ClCompile Include="..\..\..\curl\lib\md4.c" />
+    <ClCompile Include="..\..\..\curl\lib\md5.c" />
+    <ClCompile Include="..\..\..\curl\lib\http_negotiate.c" />
+    <ClCompile Include="..\..\..\curl\lib\inet_pton.c" />
+    <ClCompile Include="..\..\..\curl\lib\strtoofft.c" />
+    <ClCompile Include="..\..\..\curl\lib\strerror.c" />
+    <ClCompile Include="..\..\..\curl\lib\amigaos.c" />
+    <ClCompile Include="..\..\..\curl\lib\hostasyn.c" />
+    <ClCompile Include="..\..\..\curl\lib\hostip4.c" />
+    <ClCompile Include="..\..\..\curl\lib\hostip6.c" />
+    <ClCompile Include="..\..\..\curl\lib\hostsyn.c" />
+    <ClCompile Include="..\..\..\curl\lib\inet_ntop.c" />
+    <ClCompile Include="..\..\..\curl\lib\parsedate.c" />
+    <ClCompile Include="..\..\..\curl\lib\select.c" />
+    <ClCompile Include="..\..\..\curl\lib\tftp.c" />
+    <ClCompile Include="..\..\..\curl\lib\splay.c" />
+    <ClCompile Include="..\..\..\curl\lib\strdup.c" />
+    <ClCompile Include="..\..\..\curl\lib\socks.c" />
+    <ClCompile Include="..\..\..\curl\lib\curl_addrinfo.c" />
+    <ClCompile Include="..\..\..\curl\lib\socks_gssapi.c" />
+    <ClCompile Include="..\..\..\curl\lib\socks_sspi.c" />
+    <ClCompile Include="..\..\..\curl\lib\curl_sspi.c" />
+    <ClCompile Include="..\..\..\curl\lib\slist.c" />
+    <ClCompile Include="..\..\..\curl\lib\nonblock.c" />
+    <ClCompile Include="..\..\..\curl\lib\curl_memrchr.c" />
+    <ClCompile Include="..\..\..\curl\lib\imap.c" />
+    <ClCompile Include="..\..\..\curl\lib\pop3.c" />
+    <ClCompile Include="..\..\..\curl\lib\smtp.c" />
+    <ClCompile Include="..\..\..\curl\lib\pingpong.c" />
+    <ClCompile Include="..\..\..\curl\lib\rtsp.c" />
+    <ClCompile Include="..\..\..\curl\lib\curl_threads.c" />
+    <ClCompile Include="..\..\..\curl\lib\warnless.c" />
+    <ClCompile Include="..\..\..\curl\lib\hmac.c" />
+    <ClCompile Include="..\..\..\curl\lib\curl_rtmp.c" />
+    <ClCompile Include="..\..\..\curl\lib\openldap.c" />
+    <ClCompile Include="..\..\..\curl\lib\curl_gethostname.c" />
+    <ClCompile Include="..\..\..\curl\lib\gopher.c" />
+    <ClCompile Include="..\..\..\curl\lib\idn_win32.c" />
+    <ClCompile Include="..\..\..\curl\lib\http_proxy.c" />
+    <ClCompile Include="..\..\..\curl\lib\non-ascii.c" />
+    <ClCompile Include="..\..\..\curl\lib\asyn-ares.c" />
+    <ClCompile Include="..\..\..\curl\lib\asyn-thread.c" />
+    <ClCompile Include="..\..\..\curl\lib\curl_gssapi.c" />
+    <ClCompile Include="..\..\..\curl\lib\http_ntlm.c" />
+    <ClCompile Include="..\..\..\curl\lib\curl_ntlm_wb.c" />
+    <ClCompile Include="..\..\..\curl\lib\curl_ntlm_core.c" />
+    <ClCompile Include="..\..\..\curl\lib\curl_sasl.c" />
+    <ClCompile Include="..\..\..\curl\lib\rand.c" />
+    <ClCompile Include="..\..\..\curl\lib\curl_multibyte.c" />
+    <ClCompile Include="..\..\..\curl\lib\hostcheck.c" />
+    <ClCompile Include="..\..\..\curl\lib\conncache.c" />
+    <ClCompile Include="..\..\..\curl\lib\dotdot.c" />
+    <ClCompile Include="..\..\..\curl\lib\x509asn1.c" />
+    <ClCompile Include="..\..\..\curl\lib\http2.c" />
+    <ClCompile Include="..\..\..\curl\lib\smb.c" />
+    <ClCompile Include="..\..\..\curl\lib\curl_endian.c" />
+    <ClCompile Include="..\..\..\curl\lib\curl_des.c" />
+    <ClCompile Include="..\..\..\curl\lib\system_win32.c" />
+    <ClCompile Include="..\..\..\curl\lib\mime.c" />
+    <ClCompile Include="..\..\..\curl\lib\sha256.c" />
+    <ClCompile Include="..\..\..\curl\lib\setopt.c" />
+    <ClCompile Include="..\..\..\curl\lib\curl_path.c" />
+    <ClCompile Include="..\..\..\curl\lib\curl_ctype.c" />
+    <ClCompile Include="..\..\..\curl\lib\curl_range.c" />
+    <ClCompile Include="..\..\..\curl\lib\psl.c" />
+    <ClCompile Include="..\..\..\curl\lib\doh.c" />
+    <ClCompile Include="..\..\..\curl\lib\urlapi.c" />
+    <ClCompile Include="..\..\..\curl\lib\curl_get_line.c" />
+    <ClCompile Include="..\..\..\curl\lib\altsvc.c" />
+    <ClCompile Include="..\..\..\curl\lib\socketpair.c" />
+    <ClCompile Include="..\..\..\curl\lib\vauth\vauth.c" />
+    <ClCompile Include="..\..\..\curl\lib\vauth\cleartext.c" />
+    <ClCompile Include="..\..\..\curl\lib\vauth\cram.c" />
+    <ClCompile Include="..\..\..\curl\lib\vauth\digest.c" />
+    <ClCompile Include="..\..\..\curl\lib\vauth\digest_sspi.c" />
+    <ClCompile Include="..\..\..\curl\lib\vauth\krb5_gssapi.c" />
+    <ClCompile Include="..\..\..\curl\lib\vauth\krb5_sspi.c" />
+    <ClCompile Include="..\..\..\curl\lib\vauth\ntlm.c" />
+    <ClCompile Include="..\..\..\curl\lib\vauth\ntlm_sspi.c" />
+    <ClCompile Include="..\..\..\curl\lib\vauth\oauth2.c" />
+    <ClCompile Include="..\..\..\curl\lib\vauth\spnego_gssapi.c" />
+    <ClCompile Include="..\..\..\curl\lib\vauth\spnego_sspi.c" />
+    <ClCompile Include="..\..\..\curl\lib\vtls\openssl.c" />
+    <ClCompile Include="..\..\..\curl\lib\vtls\gtls.c" />
+    <ClCompile Include="..\..\..\curl\lib\vtls\vtls.c" />
+    <ClCompile Include="..\..\..\curl\lib\vtls\nss.c" />
+    <ClCompile Include="..\..\..\curl\lib\vtls\polarssl.c" />
+    <ClCompile Include="..\..\..\curl\lib\vtls\polarssl_threadlock.c" />
+    <ClCompile Include="..\..\..\curl\lib\vtls\wolfssl.c" />
+    <ClCompile Include="..\..\..\curl\lib\vtls\schannel.c" />
+    <ClCompile Include="..\..\..\curl\lib\vtls\schannel_verify.c" />
+    <ClCompile Include="..\..\..\curl\lib\vtls\sectransp.c" />
+    <ClCompile Include="..\..\..\curl\lib\vtls\gskit.c" />
+    <ClCompile Include="..\..\..\curl\lib\vtls\mbedtls.c" />
+    <ClCompile Include="..\..\..\curl\lib\vtls\mesalink.c" />
+    <ClCompile Include="..\..\..\curl\lib\vquic\ngtcp2.c" />
+    <ClCompile Include="..\..\..\curl\lib\vquic\quiche.c" />
+    <ClCompile Include="..\..\..\curl\lib\vssh\libssh2.c" />
+    <ClCompile Include="..\..\..\curl\lib\vssh\libssh.c" />
+    <ResourceCompile Include="..\..\..\curl\lib\libcurl.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Dylan\Desktop\CEC-CSC160-Final-Project\curl\built\ZERO_CHECK.vcxproj">
+    <ProjectReference Include="..\..\..\curl\built\ZERO_CHECK.vcxproj">
       <Project>{AC156E9D-3660-384D-A740-76A18F85C970}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
