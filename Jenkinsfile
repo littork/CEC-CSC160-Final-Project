@@ -6,7 +6,7 @@ void multiline(List<String> commands) {
 pipeline {
 	agent any
 	stages {
-		stage('Configure CURL Build') {
+		stage('cURL CMake') {
 			parallel {
 				stage('Run CMake') {
 					steps {
@@ -16,7 +16,7 @@ pipeline {
 				}
 			}
 		}
-		stage('Enable CURL SSL Support') {
+		stage('cURL SSL') {
 			parallel {
 				stage('Preprocessor Definitions') {
 					steps {
@@ -30,7 +30,7 @@ pipeline {
 				}
 			}
 		}
-		stage('Build CURL') {
+		stage('cURL Build') {
 			parallel {
 				stage('Build Debug x64') {
 					steps {

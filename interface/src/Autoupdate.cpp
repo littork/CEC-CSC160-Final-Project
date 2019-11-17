@@ -9,17 +9,22 @@
 
 std::string Autoupdate::buildNumber = "";
 
+#ifndef BUILD_NUMBER
 #define BUILD_NUMBER 0
+#endif
+
+size_t WriteCallback(char* buf, size_t size, size_t nmemb, void* up) {
+	return size * nmemb;
+}
 
 void Autoupdate::begin() {
-//#ifdef BUILD_NUMBER
-	// CURL
-
 	CURL* curl = curl_easy_init();
 	curl_easy_setopt(curl, CURLOPT_URL, REPOSITORY_URL);
 	curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
 	curl_easy_setopt(curl, CURLOPT_MAXREDIRS, -1);
 	curl_easy_setopt(curl, CURLOPT_DEFAULT_PROTOCOL, "https");
+	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, &WriteCallback);
+	curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0);
 
 	char error[CURL_ERROR_SIZE];
 	curl_easy_setopt(curl, CURLOPT_ERRORBUFFER, error);
@@ -29,15 +34,14 @@ void Autoupdate::begin() {
 	
 	char* url = NULL;
 	curl_easy_getinfo(curl, CURLINFO_EFFECTIVE_URL, &url);
-	if (url) {
-
-	}
-
 	if (res != CURLE_OK) {
 		nana::msgbox m(NULL, "Failed to check for updates");
 		m << error;
 		m();
 	}
+
+	std::string buildNumber(url);
+	buildNumber = buildNumber.substr(68);
 
 	curl_easy_cleanup(curl);
 
@@ -59,5 +63,4 @@ void Autoupdate::begin() {
 			std::system(std::string("autoupdater.exe \"" + app_path + "\" https://github.com/littork/CEC-CSC160-Final-Project/releases/download/%23" + buildNumber + "/interface_x64.exe").c_str());
 		}
 	}*/
-//#endif
 }
