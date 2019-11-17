@@ -21,14 +21,14 @@ pipeline {
 				stage('Preprocessor Definitions') {
 					steps {
 						bat multiline([
-							"echo \"#define USE_SSLEAY\" > setup.txt",
-							"type curl/built/lib/curl_config.h >> setup.txt",
-							"type setup.txt > curl/built/lib/curl_config.h"
+							"echo \"#define USE_SSLEAY\" \> setup.txt",
+							"type curl/built/lib/curl_config.h \>\> setup.txt",
+							"type setup.txt \> curl/built/lib/curl_config.h"
 						])
 						bat multiline([
-							"echo \"#define USE_OPENSSL\" > setup.txt",
-							"type curl/built/lib/curl_config.h >> setup.txt",
-							"type setup.txt > curl/built/lib/curl_config.h"
+							"echo \"#define USE_OPENSSL\" \> setup.txt",
+							"type curl/built/lib/curl_config.h \>\> setup.txt",
+							"type setup.txt \> curl/built/lib/curl_config.h"
 						])
 					}
 				}
