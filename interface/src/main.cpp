@@ -69,5 +69,6 @@ int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR pCmdLi
 	form.display();
 
 	UI::start();
+
 	return 0;
 }

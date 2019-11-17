@@ -8,5 +8,5 @@ private:
 public:
 	static bool check();
 private:
-	static std::string buildNumber;
+	static void cleanup(const std::string& targetPath);
 };
