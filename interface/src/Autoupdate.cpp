@@ -11,17 +11,35 @@ std::string Autoupdate::buildNumber = "";
 
 #define BUILD_NUMBER 0
 
-size_t write_data(void* buffer, size_t size, size_t nmemb, void* userp) {
-	return size * nmemb;
-}
-
 void Autoupdate::begin() {
 //#ifdef BUILD_NUMBER
 	// CURL
 
-	auto handle = curl_easy_init();
-	curl_easy_setopt(handle, CURLOPT_WRITEFUNCTION, write_data);
-	curl_easy_setopt(handle, CURLOPT_URL, REPOSITORY_URL);
+	CURL* curl = curl_easy_init();
+	curl_easy_setopt(curl, CURLOPT_URL, REPOSITORY_URL);
+	curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
+	curl_easy_setopt(curl, CURLOPT_MAXREDIRS, -1);
+	curl_easy_setopt(curl, CURLOPT_DEFAULT_PROTOCOL, "https");
+
+	char error[CURL_ERROR_SIZE];
+	curl_easy_setopt(curl, CURLOPT_ERRORBUFFER, error);
+	error[0] = 0;
+
+	CURLcode res = curl_easy_perform(curl);
+	
+	char* url = NULL;
+	curl_easy_getinfo(curl, CURLINFO_EFFECTIVE_URL, &url);
+	if (url) {
+
+	}
+
+	if (res != CURLE_OK) {
+		nana::msgbox m(NULL, "Error");
+		m << "Failed to check for updates";
+		m();
+	}
+
+	curl_easy_cleanup(curl);
 
 	/*if (!buildNumber.size()) {
 		buildNumber = std::to_string(BUILD_NUMBER);
