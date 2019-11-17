@@ -23,9 +23,9 @@ pipeline {
 						echo 'Beginning Debug x64 Build'
 						bat multiline([
 							"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x86_x64",
-							"Msbuild.exe ./curl/built/lib/libcurl.vcxproj /p:Configuration=Debug /p:SolutionDir=../../../",
-							"copy ./curl/built/lib/Debug/libcurl-d.lib ./build/libcurl/x64/Debug/libcurl.lib"
+							"Msbuild.exe ./curl/built/lib/libcurl.vcxproj /p:Configuration=Debug /p:SolutionDir=../../../"
 						])
+						bat "xcopy \"./curl/built/lib/Debug/libcurl-d.lib\" \"./build/libcurl/x64/Debug/libcurl.lib\""
 					}
 				}
 				stage('Build Release x64') {
@@ -33,9 +33,9 @@ pipeline {
 						echo 'Beginning Release x64 Build'
 						bat multiline([
 							"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x86_x64",
-							"Msbuild.exe ./curl/built/lib/libcurl.vcxproj /p:Configuration=Release /p:SolutionDir=../../../",
-							"copy ./curl/built/lib/Release/libcurl.lib ./build/libcurl/x64/Release/libcurl.lib"
+							"Msbuild.exe ./curl/built/lib/libcurl.vcxproj /p:Configuration=Release /p:SolutionDir=../../../"
 						])
+						bat "xcopy \"./curl/built/lib/Debug/libcurl.lib\" \"./build/libcurl/x64/Release/libcurl.lib\""
 					}
 				}
 			}
