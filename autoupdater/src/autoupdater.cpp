@@ -49,12 +49,14 @@ int main(int argc, char* argv[]) {
 	std::cout << "Target path: " << targetPath << std::endl;
 	std::cout << "Target url: " << targetURL << std::endl;
 
-	{ // Delete old interface
+	try { // Delete old interface
 		std::cout << "Removing old interface executable\n";
 		std::remove(targetPath.c_str());
+	} catch (const std::exception& e) {
+		std::cout << "Failed to remove old executable: " << e.what() << std::endl;
 	}
 
-	{ // Download new interface
+	try { // Download new interface
 		std::cout << "Downloading new interface executable\n";
 		CURL* curl = curl_easy_init();
 		curl_easy_setopt(curl, CURLOPT_URL, targetURL.c_str());
@@ -77,16 +79,15 @@ int main(int argc, char* argv[]) {
 			if (res != CURLE_OK) {
 				std::cout << "Failed to download update: ";
 				std::cout << autoUpdaterError << std::endl;
-				return true;
 			}
 		} else {
 			std::cout << "Failed to download update: ";
 			std::cout << "Unable to open local file to write downloaded data to\n";
-			curl_easy_cleanup(curl);
-			return true;
 		}
 
 		curl_easy_cleanup(curl);
+	} catch (const std::exception& e) {
+		std::cout << "Failed to download update: " << e.what() << std::endl;
 	}
 
 	// Settle things
