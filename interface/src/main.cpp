@@ -82,9 +82,10 @@ int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR pCmdLi
 
 	// Game details
 
-	nana::group gameDetailsGroup(form.form, nana::rectangle{ 10, 110, 480, 100 });
+	nana::group gameDetailsGroup(form.form, nana::rectangle{ 10, 120, 480, 100 });
 
 	gameDetailsGroup.caption("Game Details");
+	gameDetailsGroup.bgcolor(NANA_COLOR_PURE_WHITE);
 
 	// Show form
 

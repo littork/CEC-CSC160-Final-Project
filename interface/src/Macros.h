@@ -11,3 +11,5 @@
 // Colors
 
 #define COLOR_HEX_DEFAULT 0xf0f0f0
+
+#define NANA_COLOR_PURE_WHITE {255, 255, 255}
