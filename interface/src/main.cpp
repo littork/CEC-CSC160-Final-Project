@@ -9,6 +9,8 @@
 
 #include <nana/gui/widgets/label.hpp>
 #include <nana/gui/widgets/button.hpp>
+#include <nana/gui/widgets/listbox.hpp>
+#include <nana/gui/widgets/group.hpp>
 
 #include "Autoupdate.h"
 
@@ -39,14 +41,14 @@ int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR pCmdLi
 
 	// Test label
 
-	nana::label testLabel(form.form, nana::rectangle(200, 10, 100, 100));
+	/*nana::label testLabel(form.form, nana::rectangle(200, 10, 100, 100));
 	testLabel.format(true);
 	testLabel.caption("<bold size=14>Test Label</>");
-	testLabel.bgcolor(nana::color_rgb(COLOR_HEX_DEFAULT));
+	testLabel.bgcolor(nana::color_rgb(COLOR_HEX_DEFAULT));*/
 
 	// Test button
 
-	std::vector<std::string> buttonTexts = {
+	/*std::vector<std::string> buttonTexts = {
 		"Game 1",
 		"Game 2",
 		"Game 3",
@@ -62,7 +64,27 @@ int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR pCmdLi
 		button->caption(buttonTexts[i]);
 
 		buttons.push_back(button);
-	}
+	}*/
+
+	// List of games
+
+	nana::listbox gamesList(form.form, nana::rectangle{ 10, 10, 480, 100 });
+	gamesList.append_header("Game Name");
+	gamesList.append_header("Game Version");
+	gamesList.append_header("Game Author(s)");
+
+	auto category = gamesList.at(0);
+	gamesList.auto_draw(false);
+	
+	gamesList.at(0).append({ "OpenGL Test", "1.0", "Dylan Pozarnsky" });
+
+	gamesList.auto_draw(true);
+
+	// Game details
+
+	nana::group gameDetailsGroup(form.form, nana::rectangle{ 10, 110, 480, 100 });
+
+	gameDetailsGroup.caption("Game Details");
 
 	// Show form
 
