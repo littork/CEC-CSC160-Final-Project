@@ -120,13 +120,13 @@ bool Autoupdate::check() {
 				STARTUPINFO si = {sizeof(STARTUPINFO)};
 				si.cb = sizeof(si);
 				si.dwFlags = STARTF_USESHOWWINDOW;
-				si.wShowWindow = SW_HIDE;
+				si.wShowWindow = SW_SHOW;
 				PROCESS_INFORMATION pi;
 				
 				LPSTR cmdArgs = const_cast<LPSTR>(std::string("Autoupdater \"" + std::string(path) + "\" \"" + RELEASES_URL + remoteBuildNumber + "/" + INTERFACE_EXECUTABLE_REMOTE + "\"").c_str());
 
 				std::string cmd = std::string(strPath + AUTOUPDATER_EXECUTABLE);
-				CreateProcess(cmd.c_str(), cmdArgs, NULL, NULL, FALSE, DETACHED_PROCESS, NULL, NULL, &si, &pi);
+				CreateProcess(cmd.c_str(), cmdArgs, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi);
 			}
 
 			return false;

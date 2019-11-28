@@ -97,10 +97,10 @@ int main(int argc, char* argv[]) {
 		STARTUPINFO si = {sizeof(STARTUPINFO)};
 		si.cb = sizeof(si);
 		si.dwFlags = STARTF_USESHOWWINDOW;
-		si.wShowWindow = SW_HIDE;
+		si.wShowWindow = SW_SHOW;
 		PROCESS_INFORMATION pi;
 		std::string cmd = std::string(targetPath);
-		CreateProcess(cmd.c_str(), NULL, NULL, NULL, FALSE, DETACHED_PROCESS, NULL, NULL, &si, &pi);
+		CreateProcess(cmd.c_str(), NULL, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi);
 	}
 
 	return 0;
