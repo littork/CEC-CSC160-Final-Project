@@ -76,7 +76,9 @@ int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR pCmdLi
 	auto category = gamesList.at(0);
 	gamesList.auto_draw(false);
 	
-	gamesList.at(0).append({ "OpenGL Test", "1.0", "Dylan Pozarnsky" });
+	// gamesList.at(0).append({ "OpenGL Test", "1.0", "Dylan Pozarnsky" });
+	gamesList.at(0).append({ "Pacman", "1.0", "Alexander Marsh" });
+	gamesList.at(0).append({ "Walking Simulator", "1.0", "Brendan Mccleery" });
 
 	gamesList.auto_draw(true);
 
