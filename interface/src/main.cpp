@@ -89,6 +89,13 @@ int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR pCmdLi
 	gameDetailsGroup.caption("Game Details");
 	gameDetailsGroup.bgcolor(NANA_COLOR_PURE_WHITE);
 
+	/*nana::label gameNameLabel(gameDetailsGroup);
+	gameNameLabel.caption("Game Name");
+
+	gameDetailsGroup["gamename"] << gameNameLabel;
+
+	gameDetailsGroup.collocate();*/
+
 	// Show form
 
 	form.display();
