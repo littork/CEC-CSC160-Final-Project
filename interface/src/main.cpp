@@ -30,7 +30,8 @@ public:
 
 const std::vector<Game> games {
 	Game("Walking Simulator", "1.0", "Brendan Mccleery", "walkingsimulator.exe", false),
-	Game("Pacman", "1.0", "Alexander Marsh", "pacman.exe", true)
+	Game("Pacman", "1.0", "Alexander Marsh", "pacman.exe", true),
+	Game("CEC Mancala", "1.0", "Dylan Pozarnsky", "cecmancala.exe", false)
 };
 
 size_t FileWriteCallbackMain(char* buf, size_t size, size_t nmemb, void* up) {

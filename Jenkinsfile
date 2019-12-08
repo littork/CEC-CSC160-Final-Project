@@ -158,6 +158,12 @@ pipeline {
 						archiveArtifacts 'build/FPS/x64/Release/**/*.exe'
 					}
 				}
+				stage('Artifact CEC Mancala Release x64') {
+					steps {
+						echo 'Beginning CEC Mancala Release x64 Artifact'
+						archiveArtifacts 'prebuild/**/*.exe'
+					}
+				}
 				stage('Artifact Interface Release x64') {
 					steps {
 						echo 'Beginning Interface Release x64 Artifact'
@@ -195,6 +201,14 @@ pipeline {
 						bat multiline([
 							"call C:\\Users\\Administrator\\Desktop\\github_token.bat",
 							"github-release\\github-release.exe upload --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"walkingsimulator.exe\" --file \"${JENKINS_HOME}/jobs/CEC-CSC160-Final-Project/branches/master/builds/${BUILD_NUMBER}/archive/build/FPS/x64/Release/FPS.exe\""
+						])
+					}
+				}
+				stage('Upload CEC Mancala x64') {
+					steps {
+						bat multiline([
+							"call C:\\Users\\Administrator\\Desktop\\github_token.bat",
+							"github-release\\github-release.exe upload --user littork --repo \"CEC-CSC160-Final-Project\" --tag #${BUILD_NUMBER} --name \"cecmancala.exe\" --file \"${JENKINS_HOME}/jobs/CEC-CSC160-Final-Project/branches/master/builds/${BUILD_NUMBER}/archive/prebuild/CECMancala.exe\""
 						])
 					}
 				}
