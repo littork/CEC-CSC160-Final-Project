@@ -44,7 +44,7 @@ void launchGame(const int& gameIndex) {
 
 	if (games[gameIndex].incompatible) {
 		nana::msgbox m(NULL, "Error");
-		m << "Unfortunately, this project is incompatible with your system architecture";
+		m << "Unfortunately, your system architecture does not meet the minimum requirements needed to run this project";
 		m();
 
 		return;
