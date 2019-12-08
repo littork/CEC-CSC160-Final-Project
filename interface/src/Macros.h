@@ -1,5 +1,9 @@
 #pragma once
 
+#ifndef BUILD_NUMBER
+#define BUILD_NUMBER 0
+#endif
+
 #define BUILD_DATE __DATE__ " " __TIME__
 
 #define REPOSITORY_URL "https://github.com/littork/CEC-CSC160-Final-Project/releases/latest"

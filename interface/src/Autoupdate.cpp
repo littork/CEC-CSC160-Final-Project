@@ -10,10 +10,6 @@
 #include <nana/gui.hpp>
 #include <curl/curl.h>
 
-#ifndef BUILD_NUMBER
-#define BUILD_NUMBER 0
-#endif
-
 size_t BlankWriteCallback(char* buf, size_t size, size_t nmemb, void* up) {
 	return size * nmemb;
 }
@@ -23,14 +19,14 @@ size_t FileWriteCallback(char* buf, size_t size, size_t nmemb, void* up) {
 	return written;
 }
 
-void Autoupdate::cleanup(const std::string& targetPath) {
-	std::string targetRemovePath(targetPath + AUTOUPDATER_EXECUTABLE);
+void Autoupdate::cleanup(const std::string& targetPath, const std::string& executable) {
+	std::string targetRemovePath(targetPath + executable);
 
 	// Would expect an error if no file is present
 	std::remove(targetRemovePath.c_str());
 }
 
-bool Autoupdate::check() {
+std::string Autoupdate::stringPath() {
 	HMODULE hModule = GetModuleHandle(NULL);
 	CHAR path[MAX_PATH];
 	GetModuleFileName(hModule, path, MAX_PATH);
@@ -38,8 +34,10 @@ bool Autoupdate::check() {
 	std::string strPath(path);
 	strPath = strPath.substr(0, strPath.find_last_of('\\\\')) + "\\";
 
-	cleanup(strPath);
+	return strPath;
+}
 
+std::string Autoupdate::getRemoteBuildNumber() {
 	CURL* curl = curl_easy_init();
 	curl_easy_setopt(curl, CURLOPT_URL, REPOSITORY_URL);
 	curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
@@ -53,14 +51,13 @@ bool Autoupdate::check() {
 	error[0] = 0;
 
 	CURLcode res = curl_easy_perform(curl);
-	
+
 	char* url = NULL;
 	curl_easy_getinfo(curl, CURLINFO_EFFECTIVE_URL, &url);
 	if (res != CURLE_OK) {
 		nana::msgbox m(NULL, "Failed to check for updates");
 		m << error;
 		m();
-		return true;
 	}
 
 	std::string remoteBuildNumber(url);
@@ -68,7 +65,16 @@ bool Autoupdate::check() {
 
 	curl_easy_cleanup(curl);
 
-	std::string localBuildNumber = std::to_string(BUILD_NUMBER);
+	return remoteBuildNumber;
+}
+
+bool Autoupdate::check() {
+	const auto strPath = stringPath();
+
+	cleanup(strPath, AUTOUPDATER_EXECUTABLE);
+
+	const auto remoteBuildNumber = getRemoteBuildNumber();
+	const std::string localBuildNumber = std::to_string(BUILD_NUMBER);
 
 	if (remoteBuildNumber != localBuildNumber) {
 		nana::msgbox m(NULL, "Update Available", nana::msgbox::yes_no);
@@ -123,7 +129,7 @@ bool Autoupdate::check() {
 				si.wShowWindow = SW_SHOW;
 				PROCESS_INFORMATION pi;
 				
-				LPSTR cmdArgs = const_cast<LPSTR>(std::string("Autoupdater \"" + std::string(path) + "\" \"" + RELEASES_URL + remoteBuildNumber + "/" + INTERFACE_EXECUTABLE_REMOTE + "\"").c_str());
+				LPSTR cmdArgs = const_cast<LPSTR>(std::string("Autoupdater \"" + strPath + "\" \"" + RELEASES_URL + remoteBuildNumber + "/" + INTERFACE_EXECUTABLE_REMOTE + "\"").c_str());
 
 				std::string cmd = std::string(strPath + AUTOUPDATER_EXECUTABLE);
 				CreateProcess(cmd.c_str(), cmdArgs, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi);

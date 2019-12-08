@@ -13,7 +13,84 @@
 #include <nana/gui/widgets/textbox.hpp>
 #include <nana/gui/widgets/group.hpp>
 
+#include <curl/curl.h>
+
 #include "Autoupdate.h"
+
+struct Game {
+	Game(const std::string& _name, const std::string& _version, const std::string& _author, const std::string& _filename, const bool& _incompatible) : name(_name), version(_version), author(_author), filename(_filename), incompatible(_incompatible) {}
+
+public:
+	std::string name;
+	std::string version;
+	std::string author;
+	std::string filename;
+	bool incompatible;
+};
+
+const std::vector<Game> games {
+	Game("Walking Simulator", "1.0", "Brendan Mccleery", "walkingsimulator.exe", false),
+	Game("Pacman", "1.0", "Alexander Marsh", "pacman.exe", true)
+};
+
+size_t FileWriteCallbackMain(char* buf, size_t size, size_t nmemb, void* up) {
+	size_t written = fwrite(buf, size, nmemb, ( FILE*) up);
+	return written;
+}
+
+void launchGame(const int& gameIndex) {
+	const auto targetGame = games[gameIndex];
+
+	if (games[gameIndex].incompatible) {
+		nana::msgbox m(NULL, "Error");
+		m << "Unfortunately, this project is incompatible with your system architecture";
+		m();
+
+		return;
+	}
+
+	const auto stringPath = Autoupdate::stringPath();
+	const auto gameExecutable = targetGame.filename;
+
+	const auto remoteBuildNumber = Autoupdate::getRemoteBuildNumber();
+
+	// Erase old game executable if it exists
+	Autoupdate::cleanup(stringPath, gameExecutable);
+
+	{ // Download game executable
+		CURL* curl = curl_easy_init();
+		const std::string autoupdaterURL = RELEASES_URL + remoteBuildNumber + "/" + gameExecutable;
+		curl_easy_setopt(curl, CURLOPT_URL, autoupdaterURL.c_str());
+		curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
+		curl_easy_setopt(curl, CURLOPT_MAXREDIRS, -1);
+		curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0);
+		curl_easy_setopt(curl, CURLOPT_NOPROGRESS, 1L);
+		curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, &FileWriteCallbackMain);
+
+		FILE* autoupdateFile = fopen(std::string(stringPath + gameExecutable).c_str(), "wb");
+		if (autoupdateFile) {
+			curl_easy_setopt(curl, CURLOPT_WRITEDATA, autoupdateFile);
+			CURLcode res = curl_easy_perform(curl);
+
+			char autoUpdaterError[CURL_ERROR_SIZE];
+			curl_easy_setopt(curl, CURLOPT_ERRORBUFFER, autoUpdaterError);
+			autoUpdaterError[0] = 0;
+
+			fclose(autoupdateFile);
+			if (res != CURLE_OK) {
+				nana::msgbox m(NULL, "Failed to download game: " + targetGame.name);
+				m << autoUpdaterError;
+				m();
+			}
+		} else {
+			nana::msgbox m(NULL, "Failed to download game: " + targetGame.name);
+			m << "Unable to open local file to write downloaded data to";
+			m();
+		}
+
+		curl_easy_cleanup(curl);
+	}
+}
 
 class inline_widget : public nana::listbox::inline_notifier_interface {
 private:
@@ -41,8 +118,7 @@ private:
 		btn_.create(wd);
 		btn_.caption("Launch");
 		btn_.events().click([this] {
-			auto& lsbox = dynamic_cast<nana::listbox&>(indicator_->host());
-			lsbox.erase(lsbox.at(pos_));
+			launchGame(pos_.item);
 		});
 
 		btn_.events().mouse_move([this] {
@@ -146,31 +222,14 @@ int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR pCmdLi
 
 	auto category = gamesList.at(0);
 	gamesList.auto_draw(false);
-	
-	//nana::button launchButton = nana::button(form.form, nana::rectangle(10, 10, 100, 25));
-	//launchButton.caption("Launch");
 
-	// gamesList.at(0).append({ "OpenGL Test", "1.0", "Dylan Pozarnsky" });
-	gamesList.at(0).append({ "Pacman", "1.0", "Alexander Marsh", "" });
-	gamesList.at(0).append({ "Walking Simulator", "1.0", "Brendan Mccleery", "" });
+	for (int i = 0; i < games.size(); i++) {
+		gamesList.at(0).append({games[i].name, games[i].version, games[i].author, ""});
+	}
 
 	gamesList.at(0).inline_factory(3, nana::pat::make_factory<inline_widget>());
 
 	gamesList.auto_draw(true);
-
-	// Game details
-
-	//nana::group gameDetailsGroup(form.form, nana::rectangle{ 10, 120, 480, 100 });
-
-	//gameDetailsGroup.caption("Game Details");
-	//gameDetailsGroup.bgcolor(NANA_COLOR_PURE_WHITE);
-
-	/*nana::label gameNameLabel(gameDetailsGroup);
-	gameNameLabel.caption("Game Name");
-
-	gameDetailsGroup["gamename"] << gameNameLabel;
-
-	gameDetailsGroup.collocate();*/
 
 	// Show form
 

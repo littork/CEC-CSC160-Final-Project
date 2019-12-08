@@ -7,6 +7,9 @@ private:
 	Autoupdate() {};
 public:
 	static bool check();
-private:
-	static void cleanup(const std::string& targetPath);
+	static void cleanup(const std::string& targetPath, const std::string& executable);
+
+	static std::string stringPath();
+
+	static std::string getRemoteBuildNumber();
 };
