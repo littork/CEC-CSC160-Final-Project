@@ -81,14 +81,33 @@ void launchGame(const int& gameIndex) {
 				nana::msgbox m(NULL, "Failed to download game: " + targetGame.name);
 				m << autoUpdaterError;
 				m();
+
+				curl_easy_cleanup(curl);
+
+				return;
 			}
 		} else {
 			nana::msgbox m(NULL, "Failed to download game: " + targetGame.name);
 			m << "Unable to open local file to write downloaded data to";
 			m();
+
+			curl_easy_cleanup(curl);
+
+			return;
 		}
 
 		curl_easy_cleanup(curl);
+	}
+
+	{ // Start the game
+		STARTUPINFO si = {sizeof(STARTUPINFO)};
+		si.cb = sizeof(si);
+		si.dwFlags = STARTF_USESHOWWINDOW;
+		si.wShowWindow = SW_SHOW;
+		PROCESS_INFORMATION pi;
+
+		std::string cmd = std::string(stringPath + gameExecutable);
+		CreateProcess(cmd.c_str(), NULL, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi);
 	}
 }
 
